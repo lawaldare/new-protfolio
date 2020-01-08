@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 50px;
+}
+
+.card {
+  padding: 50px;
+}
+
+.about {
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(#000, .2);
+  transition: all .2s;
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba(#000, .4);
+    transform: rotate(.5deg) scale(1.1);
+    color: #fff !important;
+    background-color: #55c57a;
+  }
+
+}

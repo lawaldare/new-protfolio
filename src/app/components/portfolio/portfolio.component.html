@@ -1,0 +1,13 @@
+<div class="mb-4">
+  <button class="btn__link btn__link--green">All</button>
+  <button class="btn__link btn__link--green">HTML/CSS</button>
+  <button class="btn__link btn__link--green">JavaScript</button>
+  <button class="btn__link btn__link--green">ReactJS</button>
+  <button class="btn__link btn__link--green">Angular</button>
+</div>
+
+<div class="projects-container">
+  <div *ngFor="let project of projects">
+    <app-portfolio-card [portfolio]="project"></app-portfolio-card>
+  </div>
+</div>
