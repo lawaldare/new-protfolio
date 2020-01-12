@@ -17,8 +17,8 @@ export const db = [
     name: 'Traville',
     imageURL: 'assets/images/traville.jpg',
     stack: 'html',
-    viewLink: 'https://lawaldare.github.io/traville/',
-    repoLink: 'https://github.com/lawaldare/traville'
+    viewLink: 'https://lawaldare.github.io/travelville/',
+    repoLink: 'https://github.com/lawaldare/travelville'
   },
   {
     name: 'Quazzu',
