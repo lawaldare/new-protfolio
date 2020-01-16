@@ -23,3 +23,38 @@
   }
 
 }
+
+.card__sub {
+  border-top: 1px solid #343a40;
+  border-left: 1px solid #343a40;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(#000, .2);
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: all .2s;
+
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba(#000, .4);
+    transform: rotate(.1deg) scale(1.05);
+    color: #fff !important;
+    background-color: #55c57a;
+}
+
+}
+
+svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 40px;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(2);
+  }
+}
+
+.dev-icons {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
