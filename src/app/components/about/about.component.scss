@@ -7,17 +7,22 @@
 
 .card {
   padding: 50px;
+  background-color: transparent;
+  color: white;
 }
 
 .about {
   margin-bottom: 20px;
   cursor: pointer;
+  background-color: transparent;
+  color: white;
   box-shadow: 0 0.5rem 1rem rgba(#000, .2);
   transition: all .2s;
+  font-size: 1.5rem;
 
   &:hover {
     box-shadow: 0 1rem 2rem rgba(#000, .4);
-    transform: rotate(.5deg) scale(1.1);
+    transform: rotate(.3deg) scale(1.1);
     color: #fff !important;
     background-color: #55c57a;
   }
@@ -35,7 +40,7 @@
 
   &:hover {
     box-shadow: 0 1rem 2rem rgba(#000, .4);
-    transform: rotate(.1deg) scale(1.05);
+    transform: rotate(.1deg) scale(1.1);
     color: #fff !important;
     background-color: #55c57a;
 }
@@ -47,7 +52,7 @@ svg {
   width: 30px;
   margin-right: 40px;
   transition: all .2s;
-
+  fill: white;
   &:hover {
     transform: scale(2);
   }
@@ -57,4 +62,8 @@ svg {
   padding: 20px;
   display: flex;
   justify-content: center;
+}
+
+.contact {
+  margin-top: 20px;
 }

@@ -19,8 +19,17 @@ $color-tertiary-dark: #5643fa;
 
 
 * {
-  // font-family: 'Sarabun', sans-serif;
   font-family: 'Quicksand', sans-serif;
 }
 
+.body {
+  background: black url(../src/assets/images/stars.png) repeat;
+  position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: block;
+     z-index: 0;
+ }
 
