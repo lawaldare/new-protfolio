@@ -213,4 +213,82 @@ img{
 
 
 
+@media only screen and (max-width: 848px){
+  .text {
+    font-size: 3rem;
+  }
+
+  .btn__link {
+    &,
+    &:link,
+    &:visited {
+    font-size: 1rem;
+    margin-right: 30px;
+
+  }
+
+  }
+}
+
+@media only screen and (max-width: 767px){
+
+  .header-text {
+    left: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 425px){
+  .text {
+    font-size: 2rem;
+  }
+
+  img{
+    height: 20vh;
+    width:20vh;
+    right: 20px;
+    top: 250px;
+  }
+
+  .btn__link {
+    &,
+    &:link,
+    &:visited {
+    font-size: 0.8rem;
+    padding: 0.8rem 1rem;
+    margin-right: 30px;
+
+  }
+
+  }
+
+
+}
+
+@media only screen and (max-width: 375px){
+  .text {
+    font-size: 1.2rem;
+  }
+
+  img{
+    height: 20vh;
+    width:20vh;
+    right: 20px;
+    top: 250px;
+  }
+
+  .btn__link {
+    &,
+    &:link,
+    &:visited {
+    font-size: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    margin-right: 20px;
+  }
+
+  }
+
+
+}
+
 
