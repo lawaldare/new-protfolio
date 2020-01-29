@@ -24,6 +24,7 @@ $color-tertiary-dark: #5643fa;
 
 .body {
   background: black url(../src/assets/images/stars.png) repeat;
+  background-attachment: fixed;
   position: absolute;
    top: 0;
    bottom: 0;
@@ -33,3 +34,8 @@ $color-tertiary-dark: #5643fa;
      z-index: 0;
  }
 
+ @media only screen and (max-width: 991px){
+  .navbar-light .navbar-toggler-icon {
+    background: #55c57a !important;
+  }
+}
