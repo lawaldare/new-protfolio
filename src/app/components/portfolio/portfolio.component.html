@@ -5,7 +5,6 @@
 </div>
 
 <div class="projects-container">
-  <div *ngFor="let project of projectFiltered">
-    <app-portfolio-card [portfolio]="project" class="project"></app-portfolio-card>
-  </div>
+  <app-portfolio-card *ngFor="let project of projectFiltered" [portfolio]="project" class="project">
+  </app-portfolio-card>
 </div>
