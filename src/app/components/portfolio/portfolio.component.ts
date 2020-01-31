@@ -21,8 +21,6 @@ export class PortfolioComponent implements OnInit {
 
     this.projectFiltered = this.projects;
 
-    console.log(this.projects)
-
   }
 
 
