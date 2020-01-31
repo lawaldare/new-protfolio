@@ -10,13 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  projects: Project[]
+  projects: Project[];
+  projectFiltered: Project[];
 
   constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
 
-    this.getPojects();
+    this.getProjects();
+
+    this.projectFiltered = this.projects;
 
     console.log(this.projects)
 
@@ -25,8 +28,17 @@ export class PortfolioComponent implements OnInit {
 
 
 
-  getPojects() {
+  getProjects() {
     this.projects = this.projectService.getProjects();
+    this.projectFiltered = this.projects;
+  }
+
+  js(): void {
+    this.projectFiltered = this.projects.filter(p => p.stack === 'javascript');
+  }
+
+  angular(): void {
+    this.projectFiltered = this.projects.filter(p => p.stack === 'angular');
   }
 
 }

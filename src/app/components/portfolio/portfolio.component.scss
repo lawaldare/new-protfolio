@@ -1,12 +1,16 @@
 .projects-container {
-  // width: 90%;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  // grid-gap: 10px;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.project {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+button:focus {
+  outline: none;
 }
 
 

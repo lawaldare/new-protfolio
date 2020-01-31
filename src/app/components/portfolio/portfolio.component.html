@@ -1,13 +1,11 @@
 <div class="mb-4">
-  <button class="btn__link btn__link--green">All</button>
-  <button class="btn__link btn__link--green">HTML/CSS</button>
-  <button class="btn__link btn__link--green">JavaScript</button>
-  <button class="btn__link btn__link--green">Wordpress</button>
-  <button class="btn__link btn__link--green">Angular</button>
+  <button class="btn__link btn__link--green" (click)="getProjects()">All</button>
+  <button class="btn__link btn__link--green" (click)="js()">HTML/CSS/JS</button>
+  <button class="btn__link btn__link--green" (click)="angular()">Angular</button>
 </div>
 
 <div class="projects-container">
-  <div *ngFor="let project of projects">
-    <app-portfolio-card [portfolio]="project"></app-portfolio-card>
+  <div *ngFor="let project of projectFiltered">
+    <app-portfolio-card [portfolio]="project" class="project"></app-portfolio-card>
   </div>
 </div>

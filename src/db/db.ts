@@ -1,38 +1,38 @@
 export const db = [
   {
+    name: 'Countries With Themes',
+    imageURL: 'assets/images/countries.png',
+    stack: 'angular',
+    viewLink: 'https://countries-with-theme-switch.netlify.com/countries',
+    repoLink: 'https://github.com/lawaldare/countries-theme-switch'
+  },
+  {
     name: 'Clock',
     imageURL: 'assets/images/clock.jpg',
-    stack: 'html',
+    stack: 'javascript',
     viewLink: 'https://lawaldare.github.io/clock/',
     repoLink: 'https://github.com/lawaldare/clock'
   },
   {
-    name: 'Bizland',
-    imageURL: 'assets/images/bizland.jpg',
-    stack: 'html',
-    viewLink: 'https://lawaldare.github.io/bizland/',
-    repoLink: 'https://github.com/lawaldare/bizland'
+    name: 'Bookstore',
+    imageURL: 'assets/images/bookstore.png',
+    stack: 'angular',
+    viewLink: 'https://bookstore-dare.netlify.com/',
+    repoLink: 'https://github.com/lawaldare/bookstore-angular'
   },
   {
-    name: 'Traville',
-    imageURL: 'assets/images/traville.jpg',
-    stack: 'html',
-    viewLink: 'https://lawaldare.github.io/travelville/',
-    repoLink: 'https://github.com/lawaldare/travelville'
-  },
-  {
-    name: 'Quazzu',
-    imageURL: 'assets/images/quazzu.jpg',
-    stack: 'html',
-    viewLink: 'https://lawaldare.github.io/quazzu/',
-    repoLink: 'https://github.com/lawaldare/quazzu'
-  },
-  {
-    name: 'Bitcoin Calculator',
-    imageURL: 'assets/images/bitcoin.jpg',
+    name: 'Naira Converter',
+    imageURL: 'assets/images/naira-converter.jpg',
     stack: 'javascript',
-    viewLink: 'https://lawaldare.github.io/bitcoin-calculator/',
-    repoLink: 'https://github.com/lawaldare/bitcoin-calculator'
+    viewLink: 'https://lawaldare.github.io/naira-converter/',
+    repoLink: 'https://github.com/lawaldare/naira-converter'
+  },
+  {
+    name: 'YouTube Trending Videos',
+    imageURL: 'assets/images/youtube.png',
+    stack: 'angular',
+    viewLink: 'https://youtube-trending-video.netlify.com/',
+    repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo'
   },
   {
     name: 'Color game',
@@ -42,11 +42,24 @@ export const db = [
     repoLink: 'https://github.com/lawaldare/color-game'
   },
   {
-    name: 'Naira Converter',
-    imageURL: 'assets/images/naira-converter.jpg',
+    name: 'Mealy App',
+    imageURL: 'assets/images/mealy.png',
+    stack: 'angular',
+    viewLink: 'https://mealy.netlify.com/',
+    repoLink: 'https://github.com/lawaldare/meal-angular-repo'
+  },
+  {
+    name: 'Bitcoin Calculator',
+    imageURL: 'assets/images/bitcoin.jpg',
     stack: 'javascript',
-    viewLink: 'https://lawaldare.github.io/naira-converter/',
-    repoLink: 'https://github.com/lawaldare/naira-converter'
+    viewLink: 'https://lawaldare.github.io/bitcoin-calculator/',
+    repoLink: 'https://github.com/lawaldare/bitcoin-calculator'
+  },
+  {
+    name: 'Github',
+    imageURL: 'assets/images/github.png',
+    stack: 'angular',
+    viewLink: 'https://github-app.netlify.com/',
+    repoLink: 'https://github.com/lawaldare/github-search-angular'
   }
-
 ]

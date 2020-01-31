@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { PortfolioCardComponent } from './components/portfolio-card/portfolio-card.component';
 
@@ -16,7 +15,6 @@ import { PortfolioCardComponent } from './components/portfolio-card/portfolio-ca
     NavbarComponent,
     AboutComponent,
     PortfolioComponent,
-    ContactComponent,
     HomeComponent,
     PortfolioCardComponent
   ],
