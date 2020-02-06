@@ -68,8 +68,15 @@ $color-tertiary-dark: #5643fa;
   }
 
   &__image {
-    height: 100%;
+    height: 50%;
     width: 100%;
+  }
+
+  &__desc {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+
   }
 
   &__links {
@@ -89,7 +96,6 @@ $color-tertiary-dark: #5643fa;
     font-weight: 700;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
-    color: transparent;
     letter-spacing: 0.2rem;
   }
 

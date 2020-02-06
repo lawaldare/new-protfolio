@@ -4,4 +4,5 @@ export class Project {
   stack: string;
   viewLink: string;
   repoLink: string;
+  desc: string;
 }
