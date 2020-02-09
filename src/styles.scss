@@ -38,6 +38,21 @@ $color-tertiary-dark: #5643fa;
 
  @media only screen and (max-width: 991px){
   .navbar-light .navbar-toggler-icon {
-    background: #55c57a !important;
+    background: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      background-color: #55c57a;
+      height: 4px;
+      width: 100%;
+      margin: 5px;
+    }
   }
 }
