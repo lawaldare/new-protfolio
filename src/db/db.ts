@@ -16,6 +16,14 @@ export const db = [
     desc: 'The app shows a real time clock.'
   },
   {
+    name: 'Daverose Hospital',
+    imageURL: 'assets/images/daverosehospital.jpg',
+    stack: 'wordpress',
+    viewLink: 'https://daverosehospital.org/',
+    repoLink: 'https://daverosehospital.org/',
+    desc: 'This is a website for Daverose Hospital owned by Dr. Tomori Popoola Olagoke.'
+  },
+  {
     name: 'Bookstore',
     imageURL: 'assets/images/bookstore.png',
     stack: 'angular',
