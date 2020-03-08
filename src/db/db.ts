@@ -48,6 +48,14 @@ export const db = [
     desc: 'This app enable users to view the Youtube trending videos of another countries apart from their country'
   },
   {
+    name: 'Weather App',
+    imageURL: 'assets/images/weather.png',
+    stack: 'angular',
+    viewLink: 'https://da-weather.netlify.com/',
+    repoLink: 'https://github.com/lawaldare/weather',
+    desc: 'This app enable users to see the current weather of any city in the world'
+  },
+  {
     name: 'Color game',
     imageURL: 'assets/images/color-game.jpg',
     stack: 'javascript',
