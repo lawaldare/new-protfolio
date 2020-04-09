@@ -16,12 +16,28 @@ export const db = [
     desc: 'The app shows a real time clock.'
   },
   {
+    name: 'Expense Tracker',
+    imageURL: 'assets/images/expense-tracker.png',
+    stack: 'angular',
+    viewLink: 'https://expense-tracker-angular.netlify.com/',
+    repoLink: 'https://github.com/lawaldare/expenseTracker',
+    desc: 'The app is used to calculate the expense and income of user'
+  },
+  {
     name: 'Daverose Hospital',
     imageURL: 'assets/images/daverosehospital.jpg',
     stack: 'wordpress',
     viewLink: 'https://daverosehospital.org/',
     repoLink: 'https://daverosehospital.org/',
     desc: 'This is a website for Daverose Hospital owned by Dr. Tomori Popoola Olagoke.'
+  },
+  {
+    name: 'Neumorphic Calculator',
+    imageURL: 'assets/images/calculator.png',
+    stack: 'javascript',
+    viewLink: 'https://lawaldare.github.io/neumorphic-calculator/',
+    repoLink: 'https://github.com/lawaldare/neumorphic-calculator',
+    desc: 'This is a calculator built with Neumorphic designs'
   },
   {
     name: 'Bookstore',
