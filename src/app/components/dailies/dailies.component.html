@@ -1,0 +1,16 @@
+<h1 class="header">Welcome to my dailies</h1>
+<p class="text">This is where I share projects on daily basis to improve my frontend skills. Currently am doing a daily
+  project of markup (HTML and CSS) on <a href="https://frontloops.io/" target="_blank">FrontLoop</a> and I would love to
+  be sharing them on my website. </p>
+
+<div class="card">
+  <div class="card-header">
+    FrontLoop Markups
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let project of projects">
+      <span (click)="goToProjectWebsite(project.link)">{{project.name}}</span>
+      <img src="assets/contacts/github.png" alt="" class="contact-icon" (click)="goToRepoLink(project.repo)">
+    </li>
+  </ul>
+</div>
