@@ -28,5 +28,10 @@ export const projectsDB = [
     name: 'Loop 1 - Step 6',
     link: 'https://daily-projects.github.io/Loop-1---Step-6/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-6'
+  },
+  {
+    name: 'Loop 1 - Step 7',
+    link: 'https://daily-projects.github.io/Loop-1---Step-7/',
+    repo: 'https://github.com/daily-projects/Loop-1---Step-7'
   }
 ]
