@@ -11,7 +11,7 @@ export const projectsDB = [
   },
   {
     name: 'Loop 1 - Step 3',
-    link: 'https://daily-projects.github.io/Loop-1---Step-3/',
+    link: 'https://priceless-kare-72c3cc.netlify.app/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-3'
   },
   {
