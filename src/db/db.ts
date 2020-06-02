@@ -88,6 +88,14 @@ export const db = [
     desc: 'This app helps users to be a good. It randomly gives them a meal, history about the meal, its ingredients and a video on how to prepare it.'
   },
   {
+    name: 'Train With Talia',
+    imageURL: 'assets/images/trainwithtalia.jpg',
+    stack: 'wordpress',
+    viewLink: 'https://trainwithtalia.com/',
+    repoLink: 'https://trainwithtalia.com/',
+    desc: 'This is a website for physical fitness based in California, USA. It is owned by Talia Adams.'
+  },
+  {
     name: 'Bitcoin Calculator',
     imageURL: 'assets/images/bitcoin.jpg',
     stack: 'javascript',
@@ -112,3 +120,14 @@ export const db = [
     desc: 'This app enable users to easily shorten their long Urls with a hashed keys.'
   }
 ]
+
+
+
+
+
+
+
+
+
+
+
