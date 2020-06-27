@@ -8,31 +8,23 @@
 .card {
   padding: 50px;
   background-color: transparent;
-  color: white;
 }
 
 .about {
   margin-bottom: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
+  border: 1px solid #c3c6ca;
+  background-color: rgba(#fff, 0.45);
+  color: black;
+  border-radius: 10px;
   box-shadow: 0 0.5rem 1rem rgba(#000, .2);
-  transition: all .2s;
   font-size: 1.5rem;
-
-  // &:hover {
-  //   box-shadow: 0 1rem 2rem rgba(#000, .4);
-  //   transform: rotate(.3deg) scale(1.1);
-  //   color: #fff !important;
-  //   background-color: #55c57a;
-  // }
-
 }
 
 .card__sub {
-  border-top: 1px solid #343a40;
-  border-left: 1px solid #343a40;
-  box-shadow: 0.5rem 0.5rem 1rem rgba(#000, .2);
+  border-top: 1px solid #c3c6ca;
+  border-left: 1px solid #c3c6ca;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(#000, .45);
+  background-color: rgba(#fff, 0.2);
   margin-top: 20px;
   border-radius: 10px;
   transition: all .2s;
