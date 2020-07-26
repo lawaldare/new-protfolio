@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
-    <a class="navbar-brand" routerLinkActive="router-link-active" [routerLink]="['/home']">Dare Lawal</a>
+    <a (click)="setTitle( 'Home | Dare Lawal' )" class="navbar-brand" routerLinkActive="router-link-active"
+      [routerLink]="['/home']">Dare Lawal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -9,13 +10,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="router-link-active" [routerLink]="['/about']">About</a>
+          <a (click)="setTitle( 'About | Dare Lawal' )" class="nav-link" routerLinkActive="router-link-active"
+            [routerLink]="['/about']">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="router-link-active" [routerLink]="['/portfolio']">Portfolio</a>
+          <a (click)="setTitle( 'Portfolio | Dare Lawal' )" class="nav-link" routerLinkActive="router-link-active"
+            [routerLink]="['/portfolio']">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="router-link-active" [routerLink]="['/dailies']">Dailies</a>
+          <a (click)="setTitle( 'Dailies | Dare Lawal' )" class="nav-link" routerLinkActive="router-link-active"
+            [routerLink]="['/dailies']">Dailies</a>
         </li>
       </ul>
     </div>

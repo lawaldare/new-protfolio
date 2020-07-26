@@ -3,6 +3,7 @@ import * as AOS from 'aos';
 import { slideInAnimation } from './app-animation';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 
 declare var gtag;
 
@@ -30,4 +31,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     AOS.init();
   }
+
+
+  // public setTitle(newTitle: string) {
+  //   this.titleService.setTitle(newTitle);
+  // }
 }
