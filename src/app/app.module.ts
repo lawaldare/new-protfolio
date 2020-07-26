@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { ModalModule } from "ngx-bootstrap/modal";
 
@@ -28,7 +30,8 @@ import { SafePipe } from './@pipe/safe.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
