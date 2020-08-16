@@ -42,6 +42,25 @@
   color: #ff7730 !important;
 }
 
+.stickify {
+  top: -75px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: #f5f5f5;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+  animation: slideDown 500ms 100ms forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -75px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 @media (max-width: 425px) {
   .nav-link,
   .navbar-brand {
