@@ -8,19 +8,19 @@ import { Title } from '@angular/platform-browser';
 })
 export class NavbarComponent implements OnInit {
 
-  stickify: boolean;
+  // stickify: boolean;
 
   constructor(private titleService: Title) { }
 
 
-  @HostListener('window:scroll', ['$event'])
-  onScroll(): void {
-    if (window.pageYOffset >= 120) {
-      this.stickify = true;
-    } else if (window.pageYOffset === 0) {
-      this.stickify = false;
-    }
-  }
+  // @HostListener('window:scroll', ['$event'])
+  // onScroll(): void {
+  //   if (window.pageYOffset >= 120) {
+  //     this.stickify = true;
+  //   } else if (window.pageYOffset === 0) {
+  //     this.stickify = false;
+  //   }
+  // }
 
   ngOnInit() {
   }
