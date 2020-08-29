@@ -56,6 +56,14 @@ export const db = [
     desc: 'The app allows user to search for books online from google books store.'
   },
   {
+    name: 'Client Panel',
+    imageURL: 'assets/images/clientpanel.jpg',
+    stack: 'angular',
+    viewLink: 'https://client-panel-2020.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/client-panel',
+    desc: 'This is a fullstack solution with firebase as backend and Angular as frontend. It is a dashboard for debtors.'
+  },
+  {
     name: 'Naira Converter',
     imageURL: 'assets/images/naira-converter.jpg',
     stack: 'javascript',
