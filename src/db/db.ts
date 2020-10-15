@@ -48,6 +48,14 @@ export const db = [
     desc: 'This is a portfolio website for David Zhao'
   },
   {
+    name: 'Octotasker LLC',
+    imageURL: 'assets/images/octotasker.png',
+    stack: 'wordpress',
+    viewLink: 'https://octotasker.com/',
+    repoLink: 'https://octotasker.com/',
+    desc: 'This is a website for an Agency'
+  },
+  {
     name: 'Bookstore',
     imageURL: 'assets/images/bookstore.png',
     stack: 'angular',
