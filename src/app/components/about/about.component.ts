@@ -16,7 +16,8 @@ export class AboutComponent implements OnInit {
   @ViewChild('renmoney', { static: true }) renmoney: ElementRef<HTMLDivElement>;
   @ViewChild('nxt', { static: true }) nxt: ElementRef<HTMLDivElement>;
   @ViewChild('prs', { static: true }) prs: ElementRef<HTMLDivElement>;
-  @ViewChild('ums', { static: true }) ums: ElementRef<HTMLDivElement>;
+  @ViewChild('mds', { static: true }) mds: ElementRef<HTMLDivElement>;
+  @ViewChild('vizbay', { static: true }) vizbay: ElementRef<HTMLDivElement>;
   @ViewChild('terragon', { static: true }) terragon: ElementRef<HTMLDivElement>;
   @ViewChild('workExperience', { static: true }) workExperience: ElementRef<HTMLHtmlElement>;
   @ViewChild('mainHeader', { static: true }) mainHeader: ElementRef<HTMLHtmlElement>;
@@ -40,10 +41,12 @@ export class AboutComponent implements OnInit {
 
     duke.from(this.workExperience.nativeElement, { scale: 2 })
       .from(this.renmoney.nativeElement, { x: -300, ease: 'back' })
-      .from(this.nxt.nativeElement, { x: 300, ease: 'back' })
+      .from(this.mds.nativeElement, { x: 300, ease: 'back' })
+      .from(this.nxt.nativeElement, { x: -300, ease: 'back' })
+      .from(this.vizbay.nativeElement, { x: 300, ease: 'back' })
       .from(this.terragon.nativeElement, { x: -300, ease: 'back' })
-      .from(this.ums.nativeElement, { x: 300, ease: 'back' })
-      .from(this.prs.nativeElement, { x: -300, ease: 'back' })
+      .from(this.prs.nativeElement, { x: 300, ease: 'back' })
+
 
     const header = gsap.timeline({ defaults: { opacity: 0, ease: "back", duration: 1 } });
 
