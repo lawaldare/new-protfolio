@@ -48,6 +48,14 @@ export const db = [
     desc: 'This is a portfolio website for David Zhao'
   },
   {
+    name: 'Mentor Coven',
+    imageURL: 'assets/images/mentor.jpg',
+    stack: 'javascript',
+    viewLink: 'https://mentor-coven.netlify.app/',
+    repoLink: 'https://mentor-coven.netlify.app/',
+    desc: 'This is a landng page for a mentorship website'
+  },
+  {
     name: 'Octotasker LLC',
     imageURL: 'assets/images/octotasker.png',
     stack: 'wordpress',

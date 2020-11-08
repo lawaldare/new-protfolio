@@ -43,9 +43,8 @@ export class AboutComponent implements OnInit {
       .from(this.renmoney.nativeElement, { x: -300, ease: 'back' })
       .from(this.mds.nativeElement, { x: 300, ease: 'back' })
       .from(this.nxt.nativeElement, { x: -300, ease: 'back' })
-      .from(this.vizbay.nativeElement, { x: 300, ease: 'back' })
-      .from(this.terragon.nativeElement, { x: -300, ease: 'back' })
-      .from(this.prs.nativeElement, { x: 300, ease: 'back' })
+      .from(this.terragon.nativeElement, { x: 300, ease: 'back' })
+      .from(this.prs.nativeElement, { x: -300, ease: 'back' })
 
 
     const header = gsap.timeline({ defaults: { opacity: 0, ease: "back", duration: 1 } });
