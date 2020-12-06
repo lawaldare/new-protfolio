@@ -41,8 +41,8 @@ export class AboutComponent implements OnInit {
 
     duke.from(this.workExperience.nativeElement, { scale: 2 })
       .from(this.renmoney.nativeElement, { x: -300, ease: 'back' })
-      .from(this.mds.nativeElement, { x: 300, ease: 'back' })
-      .from(this.nxt.nativeElement, { x: -300, ease: 'back' })
+      .from(this.nxt.nativeElement, { x: 300, ease: 'back' })
+      .from(this.mds.nativeElement, { x: -300, ease: 'back' })
       .from(this.terragon.nativeElement, { x: 300, ease: 'back' })
       .from(this.prs.nativeElement, { x: -300, ease: 'back' })
 
