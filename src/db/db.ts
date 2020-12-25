@@ -24,14 +24,6 @@ export const db = [
     desc: 'The app is used to calculate the expense and income of user'
   },
   {
-    name: 'Daverose Hospital',
-    imageURL: 'assets/images/daverosehospital.jpg',
-    stack: 'wordpress',
-    viewLink: 'https://daverosehospital.org/',
-    repoLink: 'https://daverosehospital.org/',
-    desc: 'This is a website for Daverose Hospital owned by Dr. Tomori Popoola Olagoke.'
-  },
-  {
     name: 'Neumorphic Calculator',
     imageURL: 'assets/images/calculator.png',
     stack: 'javascript',
