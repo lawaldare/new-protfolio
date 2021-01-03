@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PortfolioCardComponent } from './components/portfolio-card/portfolio-card.component';
 import { DailiesComponent } from './components/dailies/dailies.component';
 import { SafePipe } from './@pipe/safe.pipe';
+import { ReposComponent } from './repos/repos.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SafePipe } from './@pipe/safe.pipe';
     HomeComponent,
     PortfolioCardComponent,
     DailiesComponent,
-    SafePipe
+    SafePipe,
+    ReposComponent
   ],
   imports: [
     BrowserModule,

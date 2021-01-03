@@ -1,3 +1,4 @@
+import { ReposComponent } from './repos/repos.component';
 import { DailiesComponent } from './components/dailies/dailies.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { AboutComponent } from './components/about/about.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'dailies', component: DailiesComponent },
+  { path: 'repos', component: ReposComponent },
   { path: '**', component: HomeComponent }
 ];
 
