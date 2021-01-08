@@ -1,5 +1,5 @@
-$color-primary: #55c57a;
-$color-secondary-dark: #ff7730;
+$color-primary: #007cc7;
+$color-secondary-dark: #203647;
 
 .tw-cursor {
   color: $color-secondary-dark;
@@ -28,7 +28,7 @@ svg {
 }
 
 .text {
-  color: $color-secondary-dark;
+  color: #eefbfb;
   font-size: 4rem;
 }
 
@@ -56,6 +56,15 @@ svg {
 
     &::after {
       background-color: $color-primary;
+    }
+  }
+
+  &--deep-blue {
+    background-color: $color-secondary-dark;
+    color: #ffffff;
+
+    &::after {
+      background-color: $color-secondary-dark;
     }
   }
 
