@@ -19,6 +19,10 @@
   font-size: 1.5rem;
 }
 
+.header {
+  color: #eefbfb;
+}
+
 .contact {
   color: #007cc7;
   background-color: #eefbfb;
@@ -108,7 +112,9 @@ svg {
     padding: 1rem;
   }
 
-  .header {
+  .header,
+  .contact-header,
+  .about-me-header {
     font-size: 2rem;
   }
 
