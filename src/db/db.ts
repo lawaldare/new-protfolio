@@ -32,14 +32,6 @@ export const db = [
     desc: 'This is a calculator built with Neumorphic designs'
   },
   {
-    name: 'David Zhao Portfolio',
-    imageURL: 'assets/images/david.jpg',
-    stack: 'wordpress',
-    viewLink: 'http://davidzhao.net/',
-    repoLink: 'http://davidzhao.net/',
-    desc: 'This is a portfolio website for David Zhao'
-  },
-  {
     name: 'Mentor Coven',
     imageURL: 'assets/images/mentor.jpg',
     stack: 'javascript',
