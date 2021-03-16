@@ -143,6 +143,14 @@ export const db = [
     repoLink: 'https://slapdickbullies.com/',
     desc: 'This is a website for selling dogs'
   },
+  {
+    name: 'PJ Confidential',
+    imageURL: 'assets/images/pjconfidential.png',
+    stack: 'wordpress',
+    viewLink: 'https://pjconfidential.com/',
+    repoLink: 'https://pjconfidential.com/',
+    desc: 'This is an ecommerce website'
+  }
 ]
 
 
