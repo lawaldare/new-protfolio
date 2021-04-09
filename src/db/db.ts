@@ -16,6 +16,14 @@ export const db = [
     desc: 'The app shows a real time clock.'
   },
   {
+    name: 'ThreeJS Animation',
+    imageURL: 'assets/images/animation.png',
+    stack: 'animation',
+    viewLink: 'https://threejs-portfolio-homepage.netlify.app/',
+    repoLink: 'https://threejs-portfolio-homepage.netlify.app/',
+    desc: 'This is a simple animation using threejs and WebGL'
+  },
+  {
     name: 'Expense Tracker',
     imageURL: 'assets/images/expense-tracker.png',
     stack: 'angular',
