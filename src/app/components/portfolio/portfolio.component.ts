@@ -43,4 +43,8 @@ export class PortfolioComponent implements OnInit {
     this.projectFiltered = this.projects.filter(p => p.stack === 'wordpress');
   }
 
+  animation(): void {
+    this.projectFiltered = this.projects.filter(p => p.stack === 'animation');
+  }
+
 }
