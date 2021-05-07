@@ -16,6 +16,7 @@ import { PortfolioCardComponent } from './components/portfolio-card/portfolio-ca
 import { DailiesComponent } from './components/dailies/dailies.component';
 import { SafePipe } from './@pipe/safe.pipe';
 import { ReposComponent } from './repos/repos.component';
+import { RepoComponent } from './components/repo/repo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReposComponent } from './repos/repos.component';
     PortfolioCardComponent,
     DailiesComponent,
     SafePipe,
-    ReposComponent
+    ReposComponent,
+    RepoComponent
   ],
   imports: [
     BrowserModule,

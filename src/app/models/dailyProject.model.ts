@@ -1,5 +1,5 @@
 export interface DailyProject {
-  name?: string,
-  link?: string,
-  repo?: string
+  name?: string;
+  link?: string;
+  repo?: string;
 }
