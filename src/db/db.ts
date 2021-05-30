@@ -48,6 +48,14 @@ export const db = [
     desc: 'This is a landng page for a mentorship website'
   },
   {
+    name: 'College Website',
+    imageURL: 'assets/images/college.png',
+    stack: 'javascript',
+    viewLink: 'https://lawaldare.github.io/college-website/',
+    repoLink: 'https://github.com/lawaldare/college-website',
+    desc: 'This is a landng page for a college website'
+  },
+  {
     name: 'Octotasker LLC',
     imageURL: 'assets/images/octotasker.png',
     stack: 'wordpress',
