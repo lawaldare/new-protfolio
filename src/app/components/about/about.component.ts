@@ -1,6 +1,8 @@
+import { TemplateRef } from '@angular/core';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +30,11 @@ export class AboutComponent implements OnInit {
   @ViewChild('contactHeader', { static: true }) contactHeader: ElementRef<HTMLHtmlElement>;
 
 
-  constructor() { }
+  modalRef: BsModalRef;
+
+
+
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit() {
     this.initAnimation()
@@ -58,6 +64,22 @@ export class AboutComponent implements OnInit {
 
     contactAnimation.from(this.contactHeader.nativeElement, { xPercent: -100, duration: 2 }).from(this.icons.nativeElement.childNodes, { stagger: 0.1, y: 100 });
 
+  }
+
+  openModal1(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: "modal-lg" });
+  }
+  openModal2(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: "modal-lg" });
+  }
+  openModal3(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: "modal-lg" });
+  }
+  openModal4(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: "modal-lg" });
+  }
+  openModal5(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: "modal-lg" });
   }
 
 }
