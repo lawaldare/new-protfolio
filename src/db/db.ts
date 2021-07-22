@@ -128,6 +128,14 @@ export const db = [
     desc: 'This is a website for physical fitness based in California, USA. It is owned by Talia Adams.'
   },
   {
+    name: 'Data Warehouse',
+    imageURL: 'assets/images/data-warehouse.png',
+    stack: 'javascript',
+    viewLink: 'https://data-warehouse-2021.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/data-warehouse',
+    desc: 'This is a landing page of a data warehouse company'
+  },
+  {
     name: 'Bitcoin Calculator',
     imageURL: 'assets/images/bitcoin.jpg',
     stack: 'javascript',
