@@ -1,7 +1,7 @@
 <div class="container">
   <div class="about card">
-    <h1 class="about-me-header text-center" #mainHeader>More About Me</h1>
-    <p class="text" #subHeader>Passionate front-end web developer with over 2 years of experience using JavaScript,
+    <h1 class="header text-center">About Me</h1>
+    <p class="text">Passionate front-end web developer with over 2 years of experience using JavaScript,
       HTML5,
       and CSS to
       build all aspects of the user experience and user interface for client-facing landing pages. Specializes in using
@@ -158,11 +158,11 @@
 
   </div>
   <div class="card p-0 py-5">
-    <h1 class="header text-center" #workExperience>Work Experience</h1>
+    <h1 class="header text-center mb-5">Work Experience</h1>
     <div class="row">
-      <div class="col-sm-6" #renmoney>
-        <div class="card__sub">
-          <h5 class="card-header">Frontend Developer (Angular)</h5>
+      <div class="col-sm-6">
+        <div id="card__one">
+          <h4 class="card-header">Frontend Developer (Angular)</h4>
           <div class="card-body">
             <h5 class="card-title">Renmoney MFB</h5>
             <h6 class="card-title">Lagos, Nigeria</h6>
@@ -171,9 +171,20 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-6" #nxt>
-        <div class="card__sub">
-          <h5 class="card-header">WordPress Developer</h5>
+      <div class="col-sm-6">
+        <div id="card__two">
+          <h4 class="card-header">Frontend Developer (Angular)</h4>
+          <div class="card-body">
+            <h5 class="card-title">Tr1pp</h5>
+            <h6 class="card-title">Loandon, UK</h6>
+            <p class="card-text muted">July, 2021 - present</p>
+            <p class="card-text more" (click)="openModal1(template6)">Read more</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="card__three">
+          <h4 class="card-header">WordPress Developer</h4>
           <div class="card-body">
             <h5 class="card-title">NXTFactor</h5>
             <h6 class="card-title">New York, USA</h6>
@@ -182,12 +193,9 @@
           </div>
         </div>
       </div>
-
-    </div>
-    <div class="row">
-      <div class="col-sm-6" #mds>
-        <div class="card__sub">
-          <h5 class="card-header">WordPress Developer</h5>
+      <div class="col-sm-6">
+        <div id="card__four">
+          <h4 class="card-header">WordPress Developer</h4>
           <div class="card-body">
             <h5 class="card-title">Midland Digital Solutions</h5>
             <h6 class="card-title">Lagos, Nigeria</h6>
@@ -196,19 +204,9 @@
           </div>
         </div>
       </div>
-      <!-- <div class="col-sm-6" #vizbay>
-        <div class="card__sub">
-          <h5 class="card-header">WordPress Developer</h5>
-          <div class="card-body">
-            <h5 class="card-title">VIZBAY</h5>
-            <h6 class="card-title">Las Vegas, USA</h6>
-            <p class="card-text muted">June 2020 - present</p>
-          </div>
-        </div>
-      </div> -->
-      <div class="col-sm-6" #terragon>
-        <div class="card__sub">
-          <h5 class="card-header">Frontend Developer (Angular)</h5>
+      <div class="col-sm-6">
+        <div id="card__five">
+          <h4 class="card-header">Frontend Developer (Angular)</h4>
           <div class="card-body">
             <h5 class="card-title">Terragon Group</h5>
             <h6 class="card-title">Lagos, Nigeria</h6>
@@ -217,12 +215,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-
-      <div class="col-sm-6" #prs>
-        <div class="card__sub">
-          <h5 class="card-header">Teacher / Head of ICT</h5>
+      <div class="col-sm-6">
+        <div id="card__six">
+          <h4 class="card-header">Teacher / Head of ICT</h4>
           <div class="card-body">
             <h5 class="card-title">Phoebestar Royalty Schools</h5>
             <h6 class="card-title">Osogbo, Nigeria</h6>
@@ -240,7 +235,7 @@
   </div>
 
   <div id="contact" class="contact card" #contact>
-    <h1 class="contact-header text-center mb-5" #contactHeader>I can be reached on ...</h1>
+    <h1 class="header text-center mb-5" #contactHeader>I can be reached on ...</h1>
     <div class="contact-icons" #icons>
       <a href="https://www.facebook.com/lawal.dare" target="_blank" class="contact-icon-link">
         <img src="assets/contacts/facebook.svg" alt="" class="contact-icon">
@@ -283,17 +278,18 @@
     => Build and manage a loan web application platform that allows millions of users to get a loan and save money using
     HTML, CSS, SASS, JavaScript, Typescript, GSAP, and Angular.<br><br>
     => Build a widget for the loan application to be used on any other platforms of our partners using Angular.<br><br>
-    => Create and implement a custom CSS grid system, with CSS media queries for mobile responsiveness.<br><br>
-    => Execute and contribute to full-stack web development projects, with an emphasis on front-end features, browser
-    manipulation, and cross-browser compatibility.<br><br>
-    => Create HTML email templates and newsletters for e-mail marketing campaigns.<br><br>
-    => Assist in the monitoring and reporting on website traffic and performance.<br><br>
-    => Fix front-end bugs (HTML, CSS, JavaScript errors).<br><br>
-    => UX tests to test the usability of mobile or websites.<br><br>
-    => Develop front-end code in a timely and high-quality manner while ensuring a consistent look and feel.<br><br>
-    => HTML, CSS coding of front-end interfaces - including cross-browser support and unit testing to ensure quality
-    work.<br><br>
-    => QA'd to ensure project features and applications were implemented according to specification.
+  </div>
+</ng-template>
+<ng-template #template6>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Description</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    => Build and manage a loan web application platform that allows millions of users to get a loan and save money using
+    HTML, CSS, SASS, JavaScript, Typescript, GSAP, and Angular.<br><br>
   </div>
 </ng-template>
 <ng-template #template2>
@@ -307,15 +303,6 @@
     => Built beautiful websites with WordPress using page builders like Elementor, WP Bakery etc.<br><br>
     => Managed websites build with WordPress either using a paid template or using a mockup.<br><br>
     => Hosted and deployed WordPress websites on various hosting companies.<br><br>
-    => Built WordPress websites from scratch using Elementor without pre-paid themes.<br><br>
-    => Administered project collaboration; solely responsible for digital workflow, backups, and project
-    management.<br><br>
-    => Assisted and collaborated with other staff on technical matters. Conducted security reviews of applications
-    written by other developers.<br><br>
-    => Implemented and maintained content management systems (primarily WordPress) including installation,
-    configuration, troubleshooting, and creation of custom plugins and content types.<br><br>
-    => Developed and deployed upgrade/migration plans for content management systems.<br><br>
-    => Worked well independently and on a team to solve problems.
   </div>
 </ng-template>
 <ng-template #template3>
@@ -329,13 +316,6 @@
     => Built beautiful websites with WordPress using page builders like Elementor, WP Bakery etc.<br><br>
     => Managed websites build with WordPress.<br><br>
     => Hosted and deployed WordPress websites on various hosting companies.<br><br>
-    => Built WordPress websites from scratch using Elementor without pre-paid themes.<br><br>
-    => Administered project collaboration; solely responsible for digital workflow, backups, and project
-    management.<br><br>
-    => Assisted and collaborated with other staff on technical matters. Conducted security reviews of applications
-    written by other developers.<br><br>
-    => Implemented and maintained content management systems (primarily WordPress) including installation,
-    configuration, troubleshooting, and creation of custom plugins and content types.
   </div>
 </ng-template>
 <ng-template #template4>
@@ -348,14 +328,6 @@
   <div class="modal-body">
     => Built and managed a survey web application platform for creating survey and data collections for our clients
     using HTML, CSS, SASS, JavaScript, Typescript, and Angular.<br><br>
-    => Created and implemented a custom CSS grid system, with CSS media queries for mobile responsiveness.<br><br>
-    => Executed and contributed to full-stack web development projects, with an emphasis on front-end features, browser
-    manipulation, and cross-browser compatibility.<br><br>
-    => Assisted in the monitoring and reporting on website traffic and performance.<br><br>
-    => Fixed front-end bugs (HTML, CSS, JavaScript errors).<br><br>
-    => Developed front-end code in a timely and high-quality manner while ensuring a consistent look and feel.<br><br>
-    => HTML, CSS coding of front-end interfaces - including cross-browser support and unit testing to ensure quality
-    work.
   </div>
 </ng-template>
 <ng-template #template5>
@@ -370,6 +342,5 @@
     => Was the ICT Director with the responsibility to manage all the IT infrastructure and coordinate our Online exams.
     I am also responsible for the management of the school portal.<br><br>
     => Built and managed the school website using WordPress.<br><br>
-    => Organized and coordinated Examinations.<br><br>
-    => Designed the school timetable.< </div>
+  </div>
 </ng-template>

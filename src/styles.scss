@@ -1,29 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+//import font
+@import "./assets/css/fonts.scss";
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-white: #fff;
-$color-black: #000;
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-dark-3: #333;
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+:root {
+  --header-text-color: #292d34;
+  --main-text-color: #7c828d;
+  --other-color-one: #7b68ee;
+  --other-color-two: #fd71af;
+  --other-color-three: #49ccf9;
+  --other-color-four: #ffc800;
+  --other-color-five: #00b884;
+  --other-color-six: #fd7171;
+}
 
-* {
-  font-family: "Poppins", sans-serif;
+.header {
+  color: var(--header-text-color);
+  font-size: 50px;
+  line-height: 69px;
+  font-weight: bold;
+}
+
+.d-inline-block {
+  text-transform: capitalize;
+}
+
+*:not(i) {
+  font-family: "Axiforma", sans-serif !important;
   padding: 0;
   margin: 0;
 }
 
 .body {
-  background-color: #12232e;
+  background-color: #fafbfc;
 }
 
 .modal-backdrop {

@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+}
+
+.blob {
+  position: fixed;
+  height: 400px;
+
+  &__one {
+    top: 20px;
+    right: 20px;
+  }
+
+  &__two {
+    bottom: 0;
+    left: 20px;
+  }
+}

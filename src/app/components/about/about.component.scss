@@ -7,27 +7,24 @@
 
 .card {
   padding: 50px;
-  background-color: transparent;
+  border: none !important;
 }
 
 .about {
   margin-bottom: 20px;
   border: none;
-  color: #007cc7;
-  background-color: #eefbfb;
+  color: var(--main-text-color);
   border-radius: 10px;
   font-size: 1.5rem;
+
+  a {
+    color: #7b68ee;
+  }
 }
 
-.more {
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.header {
-  color: #eefbfb;
-}
+// .header {
+//   color: #eefbfb;
+// }
 
 .contact {
   color: #007cc7;
@@ -35,7 +32,7 @@
 }
 
 .card__sub {
-  color: #007cc7;
+  // color: #007cc7;
   background-color: #eefbfb;
   margin-top: 20px;
   border-radius: 10px;
@@ -44,6 +41,163 @@
   &:hover {
     box-shadow: 0 1rem 2rem rgba(#000, 0.4);
     transform: rotate(0.1deg) scale(1.05);
+  }
+}
+
+#card__one {
+  border-left: 5px solid var(--other-color-one);
+  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
+  margin-bottom: 30px;
+  h4 {
+    background-color: var(--other-color-one);
+    color: #fff;
+    border-radius: unset !important;
+  }
+
+  h5 {
+    color: var(--header-text-color);
+  }
+
+  h6,
+  .muted {
+    color: var(--main-text-color);
+    font-weight: 600;
+  }
+
+  .more {
+    color: #7b68ee;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+#card__two {
+  border-left: 5px solid var(--other-color-two);
+  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
+  margin-bottom: 30px;
+  h4 {
+    background-color: var(--other-color-two);
+    color: #fff;
+    border-radius: unset !important;
+  }
+
+  h5 {
+    color: var(--header-text-color);
+  }
+
+  h6,
+  .muted {
+    color: var(--main-text-color);
+    font-weight: 600;
+  }
+
+  .more {
+    color: var(--other-color-two);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+#card__three {
+  border-left: 5px solid var(--other-color-three);
+  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
+  margin-bottom: 30px;
+  h4 {
+    background-color: var(--other-color-three);
+    color: #fff;
+    border-radius: unset !important;
+  }
+
+  h5 {
+    color: var(--header-text-color);
+  }
+
+  h6,
+  .muted {
+    color: var(--main-text-color);
+    font-weight: 600;
+  }
+
+  .more {
+    color: var(--other-color-three);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+#card__four {
+  border-left: 5px solid var(--other-color-four);
+  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
+  margin-bottom: 30px;
+  h4 {
+    background-color: var(--other-color-four);
+    color: #fff;
+    border-radius: unset !important;
+  }
+
+  h5 {
+    color: var(--header-text-color);
+  }
+
+  h6,
+  .muted {
+    color: var(--main-text-color);
+    font-weight: 600;
+  }
+
+  .more {
+    color: var(--other-color-four);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+#card__five {
+  border-left: 5px solid var(--other-color-five);
+  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
+  margin-bottom: 30px;
+  h4 {
+    background-color: var(--other-color-five);
+    color: #fff;
+    border-radius: unset !important;
+  }
+
+  h5 {
+    color: var(--header-text-color);
+  }
+
+  h6,
+  .muted {
+    color: var(--main-text-color);
+    font-weight: 600;
+  }
+
+  .more {
+    color: var(--other-color-five);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+#card__six {
+  border-left: 5px solid var(--other-color-six);
+  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
+  margin-bottom: 30px;
+  h4 {
+    background-color: var(--other-color-six);
+    color: #fff;
+    border-radius: unset !important;
+  }
+
+  h5 {
+    color: var(--header-text-color);
+  }
+
+  h6,
+  .muted {
+    color: var(--main-text-color);
+    font-weight: 600;
+  }
+
+  .more {
+    color: var(--other-color-six);
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -72,6 +226,7 @@ svg {
 .contact {
   margin-top: 20px;
   margin-bottom: 200px;
+  background: transparent;
 }
 
 .contact-icons {
@@ -90,6 +245,13 @@ svg {
       transform: scale(2);
     }
   }
+}
+
+.modal-title {
+  color: var(--header-text-color);
+}
+.modal-body {
+  color: var(--main-text-color);
 }
 
 @media only screen and (max-width: 425px) {
@@ -116,12 +278,6 @@ svg {
 
   .card-body {
     padding: 1rem;
-  }
-
-  .header,
-  .contact-header,
-  .about-me-header {
-    font-size: 2rem;
   }
 
   .text {

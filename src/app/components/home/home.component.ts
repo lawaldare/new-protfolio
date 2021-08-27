@@ -40,11 +40,11 @@ export class HomeComponent implements OnInit {
     })
 
     writer
-      .changeTypeColor('#EEFBFB')
+      .changeTypeColor('#49ccf9')
       .type("a frontend developer")
       .rest(500)
       .clear()
-      .changeTypeColor('#EEFBFB')
+      .changeTypeColor('#00b884')
       .type("a wordpress developer")
       .rest(500)
       .clear()

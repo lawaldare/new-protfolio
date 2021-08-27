@@ -44,14 +44,9 @@ $color-tertiary-dark: #5643fa;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: green;
+      background-color: #fff;
       transform: rotateY(-180deg);
       position: relative;
-      background-image: linear-gradient(
-        to right bottom,
-        $color-primary-light,
-        $color-primary-dark
-      );
     }
   }
 
@@ -70,12 +65,7 @@ $color-tertiary-dark: #5643fa;
 
   &__desc {
     padding: 10px 20px;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    -webkit-background-clip: text;
+    color: var(--main-text-color);
   }
 
   &__links {
@@ -93,15 +83,33 @@ $color-tertiary-dark: #5643fa;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    -webkit-background-clip: text;
+    color: var(--header-text-color);
     letter-spacing: 0.2rem;
   }
 }
+
+// .btn__link {
+//   &,
+//   &:link,
+//   &:visited {
+//     text-decoration: none;
+//     text-transform: capitalize;
+//     padding: 1rem 1.5rem;
+//     display: inline;
+//     border-radius: 5px;
+//     position: relative;
+//     font-size: 1.2rem;
+//     cursor: pointer;
+//     min-width: 138px;
+//     margin-right: 50px;
+//   }
+
+//   // &:active,
+//   // &:focus {
+//   //   transform: translateY(-0.1rem);
+//   //   box-shadow: 0 0.5rem 1rem rgba(black, 0.2);
+//   // }
+// }
 
 .btn__link {
   &,
@@ -120,40 +128,25 @@ $color-tertiary-dark: #5643fa;
     margin: 30px;
   }
 
-  &--green {
-    background-color: $color-secondary-dark;
-    color: $color-white;
+  &--portfolio {
+    background-color: var(--other-color-one);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgb(123 104 238 / 50%);
 
-    &::after {
-      background-color: $color-secondary-dark;
+    &:hover {
+      background: #5c4dbc;
+      border: 1px solid #5c4dbc;
     }
   }
 
-  &:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-  }
-  &:active,
-  &:focus {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-  }
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
+  &--download {
+    border: 1px solid #5c4dbc;
+    color: var(--main-text-color);
+    box-shadow: 0 10px 25px rgb(123 104 238 / 50%);
 
-  &:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+    &:hover {
+      border: 1px solid #5c4dbc;
+    }
   }
 }
 

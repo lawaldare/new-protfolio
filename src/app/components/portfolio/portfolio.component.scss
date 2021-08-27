@@ -12,5 +12,30 @@ button:focus {
   outline: none;
 }
 
+.btn__link {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem 1.5rem;
+    display: inline;
+    border-radius: 5px;
+    position: relative;
+    font-size: 1.2rem;
+    cursor: pointer;
+    min-width: 138px;
+    margin-right: 50px;
+  }
 
+  &--portfolio {
+    background-color: var(--other-color-one);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgb(123 104 238 / 50%);
 
+    &:hover {
+      background: #5c4dbc;
+      border: 1px solid #5c4dbc;
+    }
+  }
+}

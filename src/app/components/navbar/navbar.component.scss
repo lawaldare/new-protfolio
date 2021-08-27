@@ -1,7 +1,12 @@
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #e4e4e4;
+}
+
 .navbar-brand,
 .nav-link,
 .nav-item {
-  color: #eefbfb !important;
+  color: var(--main-text-color) !important;
 }
 
 .navbar-brand {
@@ -15,6 +20,7 @@
 
 .nav-link,
 .navbar-brand {
+  font-weight: 600;
   font-size: 1.5rem;
   &:not(:last-child) {
     margin-right: 20px !important;
@@ -23,14 +29,15 @@
   &:visited {
     color: #f7f7f7;
     text-decoration: none;
-    text-transform: uppercase;
+    font-weight: 800;
+    text-transform: capitalize;
     display: inline-block;
     transition: all 0.2s;
   }
 
   &:hover,
   &:active {
-    color: #4da8da !important;
+    color: #7b68ee !important;
     background-color: #fff;
     box-shadow: 0 1rem 2rem rgba(#000, 0.4);
     transform: scale(1.2);
@@ -42,7 +49,7 @@
 }
 
 .router-link-active {
-  color: #4da8da !important;
+  color: #7b68ee !important;
 }
 
 .stickify {
@@ -69,7 +76,7 @@
   .navbar-brand {
     &:hover,
     &:active {
-      color: #ff7730 !important;
+      color: #7b68ee !important;
       background-color: #fff;
       box-shadow: 0 1rem 2rem rgba(#000, 0.4);
       transform: unset;
