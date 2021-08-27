@@ -106,6 +106,19 @@ svg {
       margin-right: 30px;
     }
   }
+  .blob {
+    height: 200px;
+
+    &__one {
+      top: 20px;
+      right: 40px;
+    }
+
+    &__two {
+      bottom: 0;
+      left: 40px;
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -133,6 +146,19 @@ svg {
   svg {
     height: 18px;
     width: 18px;
+  }
+
+  .blob {
+    height: 200px;
+
+    &__one {
+      top: 20px;
+      right: 0;
+    }
+
+    &__two {
+      display: none;
+    }
   }
 }
 

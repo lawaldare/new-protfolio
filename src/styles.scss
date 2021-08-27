@@ -17,6 +17,10 @@
   font-size: 50px;
   line-height: 69px;
   font-weight: bold;
+
+  @media only screen and (max-width: 425px) {
+    font-size: 40px;
+  }
 }
 
 .d-inline-block {
