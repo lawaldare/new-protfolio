@@ -301,15 +301,14 @@ svg {
   }
 
   .dev-icons {
-    .fab {
+    svg {
       margin-right: 10px;
     }
   }
 
   .contact-icons {
-    .fab,
-    .fas {
-      margin-right: 10px;
+    svg {
+      margin-right: 20px;
     }
   }
 
