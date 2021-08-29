@@ -79,22 +79,22 @@ export const db = [
     repoLink: 'https://github.com/lawaldare/client-panel',
     desc: 'This is a fullstack solution with firebase as backend and Angular as frontend. It is a dashboard for debtors.'
   },
-  {
-    name: 'Naira Converter',
-    imageURL: 'assets/images/naira-converter.jpg',
-    stack: 'javascript',
-    viewLink: 'https://lawaldare.github.io/naira-converter/',
-    repoLink: 'https://github.com/lawaldare/naira-converter',
-    desc: 'The app enable users to convert their Naira money to US Dollars, UK Pounds and Euros with a current exchange rate.'
-  },
-  {
-    name: 'YouTube Trending Videos',
-    imageURL: 'assets/images/youtube.png',
-    stack: 'angular',
-    viewLink: 'https://youtube-trending-video.netlify.com/',
-    repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
-    desc: 'This app enable users to view the Youtube trending videos of another countries apart from their country'
-  },
+  // {
+  //   name: 'Naira Converter',
+  //   imageURL: 'assets/images/naira-converter.jpg',
+  //   stack: 'javascript',
+  //   viewLink: 'https://lawaldare.github.io/naira-converter/',
+  //   repoLink: 'https://github.com/lawaldare/naira-converter',
+  //   desc: 'The app enable users to convert their Naira money to US Dollars, UK Pounds and Euros with a current exchange rate.'
+  // },
+  // {
+  //   name: 'YouTube Trending Videos',
+  //   imageURL: 'assets/images/youtube.png',
+  //   stack: 'angular',
+  //   viewLink: 'https://youtube-trending-video.netlify.com/',
+  //   repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
+  //   desc: 'This app enable users to view the Youtube trending videos of another countries apart from their country'
+  // },
   {
     name: 'Weather App',
     imageURL: 'assets/images/weather.png',
@@ -159,14 +159,14 @@ export const db = [
     repoLink: 'https://github.com/lawaldare/shortly',
     desc: 'This app enable users to easily shorten their long Urls with a hashed keys.'
   },
-  {
-    name: 'Slapdick Bullies',
-    imageURL: 'assets/images/slapdick.png',
-    stack: 'wordpress',
-    viewLink: 'https://slapdickbullies.com/',
-    repoLink: 'https://slapdickbullies.com/',
-    desc: 'This is a website for selling dogs'
-  },
+  // {
+  //   name: 'Slapdick Bullies',
+  //   imageURL: 'assets/images/slapdick.png',
+  //   stack: 'wordpress',
+  //   viewLink: 'https://slapdickbullies.com/',
+  //   repoLink: 'https://slapdickbullies.com/',
+  //   desc: 'This is a website for selling dogs'
+  // },
   {
     name: 'PJ Confidential',
     imageURL: 'assets/images/pjconfidential.png',
