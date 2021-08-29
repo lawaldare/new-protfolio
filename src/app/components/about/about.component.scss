@@ -18,6 +18,25 @@
   border-radius: 10px;
   font-size: 1.5rem;
 
+  &__text {
+    transform: rotateY(40deg);
+    &__one {
+      background-color: var(--other-color-two);
+      color: #fff;
+      padding: 10px;
+    }
+    &__two {
+      background-color: var(--other-color-three);
+      color: #fff;
+      padding: 10px;
+    }
+    &__three {
+      background-color: var(--other-color-six);
+      color: #fff;
+      padding: 10px;
+    }
+  }
+
   a {
     color: #7b68ee;
   }
