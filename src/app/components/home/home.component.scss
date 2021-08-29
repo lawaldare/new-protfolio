@@ -25,6 +25,12 @@ svg {
   position: relative;
 }
 
+.content__box {
+  padding: 50px 0;
+  width: 100%;
+  background-image: url("https://clickup.com/landing/images/v2/dots.svg");
+}
+
 .blob {
   position: absolute;
   height: 400px;
