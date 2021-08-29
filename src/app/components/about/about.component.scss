@@ -227,6 +227,7 @@ svg {
   margin-right: 40px;
   transition: all 0.2s;
   fill: white;
+  color: var(--other-color-one);
   &:hover {
     transform: scale(2);
   }
@@ -240,7 +241,7 @@ svg {
 
   .fab {
     margin-right: 40px;
-    color: var(--other-color-one);
+    color: var(--other-color-one) !important;
   }
 }
 
