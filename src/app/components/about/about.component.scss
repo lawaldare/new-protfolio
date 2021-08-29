@@ -6,7 +6,7 @@
 }
 
 .card {
-  padding: 50px;
+  // padding: 50px;
   border: none !important;
   background-color: transparent !important;
 }
@@ -235,11 +235,11 @@ svg {
 .dev-icons {
   padding: 20px;
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: flex-start;
   align-items: center;
 
   .fab {
-    // margin-right: 40px;
+    margin-right: 40px;
     color: var(--other-color-one);
   }
 }
@@ -252,7 +252,7 @@ svg {
 
 .contact-icons {
   display: flex;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   align-items: center;
   // padding: 1rem;
 
@@ -260,6 +260,7 @@ svg {
   .fas {
     color: var(--other-color-one);
     transition: all 0.5s;
+    margin-right: 40px;
 
     &:hover {
       transform: scale(2);
@@ -278,7 +279,7 @@ svg {
   }
 
   .card {
-    padding: 0;
+    padding: 20px !important;
   }
 
   .about {
@@ -296,6 +297,19 @@ svg {
   .text {
     font-size: 1.25rem;
     text-align: justify;
+  }
+
+  .dev-icons {
+    .fab {
+      margin-right: 5px;
+    }
+  }
+
+  .contact-icons {
+    .fab,
+    .fas {
+      margin-right: 5px;
+    }
   }
 
   .dev-icons {
