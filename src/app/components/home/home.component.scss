@@ -34,6 +34,7 @@ svg {
 .blob {
   position: absolute;
   height: 400px;
+  z-index: -1;
 
   &__one {
     top: 20px;
@@ -70,7 +71,7 @@ svg {
   &--portfolio {
     background-color: var(--other-color-one);
     color: #ffffff;
-    box-shadow: 0 10px 25px rgb(123 104 238 / 50%);
+    box-shadow: 0 5px 10px rgb(123 104 238 / 50%);
 
     &:hover {
       background: #5c4dbc;
@@ -81,7 +82,7 @@ svg {
   &--download {
     border: 1px solid #5c4dbc;
     color: var(--main-text-color);
-    box-shadow: 0 10px 25px rgb(123 104 238 / 50%);
+    box-shadow: 0 5px 10px rgb(123 104 238 / 50%);
 
     &:hover {
       border: 1px solid #5c4dbc;
