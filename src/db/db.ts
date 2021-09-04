@@ -159,14 +159,14 @@ export const db = [
     repoLink: 'https://github.com/lawaldare/shortly',
     desc: 'This app enable users to easily shorten their long Urls with a hashed keys.'
   },
-  // {
-  //   name: 'Slapdick Bullies',
-  //   imageURL: 'assets/images/slapdick.png',
-  //   stack: 'wordpress',
-  //   viewLink: 'https://slapdickbullies.com/',
-  //   repoLink: 'https://slapdickbullies.com/',
-  //   desc: 'This is a website for selling dogs'
-  // },
+  {
+    name: 'Slapdick Bullies',
+    imageURL: 'assets/images/slapdick.png',
+    stack: 'wordpress',
+    viewLink: 'https://slapdickbullies.com/',
+    repoLink: 'https://slapdickbullies.com/',
+    desc: 'This is a website for selling dogs'
+  },
   {
     name: 'PJ Confidential',
     imageURL: 'assets/images/pjconfidential.png',
