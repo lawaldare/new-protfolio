@@ -227,6 +227,7 @@ svg {
   margin-right: 40px;
   transition: all 0.2s;
   fill: white;
+  color: var(--other-color-one);
   &:hover {
     transform: scale(2);
   }
@@ -240,7 +241,7 @@ svg {
 
   .fab {
     margin-right: 40px;
-    color: var(--other-color-one);
+    color: var(--other-color-one) !important;
   }
 }
 
@@ -300,15 +301,14 @@ svg {
   }
 
   .dev-icons {
-    .fab {
-      margin-right: 5px;
+    svg {
+      margin-right: 10px;
     }
   }
 
   .contact-icons {
-    .fab,
-    .fas {
-      margin-right: 5px;
+    svg {
+      margin-right: 20px;
     }
   }
 
@@ -318,5 +318,10 @@ svg {
     svg {
       margin-right: 25px;
     }
+  }
+
+  .fa-2x,
+  .fa-3x {
+    font-size: 2em !important;
   }
 }
