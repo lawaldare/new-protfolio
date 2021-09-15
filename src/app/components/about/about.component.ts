@@ -1,10 +1,8 @@
-import { TemplateRef } from '@angular/core';
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { ProjectService } from 'src/app/services/project.service';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-about',
@@ -30,14 +28,23 @@ export class AboutComponent implements OnInit {
   // @ViewChild('contactHeader', { static: true }) contactHeader: ElementRef<HTMLHtmlElement>;
 
 
-  modalRef: BsModalRef;
+  // modalRef: BsModalRef;
+
+  jobs: {
+    title: string;
+    companyName: string;
+    location: string;
+    date: string;
+    themeColor: string;
+  }[];
 
 
 
-  constructor(private modalService: BsModalService) { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit() {
     // this.initAnimation()
+    this.jobs = this.projectService.getJobs();
   }
 
 

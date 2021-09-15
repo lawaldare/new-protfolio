@@ -178,6 +178,60 @@ export const db = [
 ]
 
 
+export const jobs = [
+  {
+    title: 'Frontend Developer (Angular)',
+    companyName: 'Renmoney MFB',
+    location: 'Lagos, Nigeria',
+    date: 'March, 2020 - present',
+    themeColor: '#7b68ee'
+  },
+  {
+    title: 'Frontend Developer (Angular)',
+    companyName: 'Tr1pp',
+    location: 'London, UK',
+    date: 'July, 2021 - present',
+    themeColor: '#fd71af'
+  },
+  {
+    title: 'Wordpress Developer',
+    companyName: 'Butleroy',
+    location: 'Upper Austria, Austria',
+    date: 'February, 2021 - present',
+    themeColor: '#49ccf9'
+  },
+  {
+    title: 'Wordpress Developer',
+    companyName: 'NXT Factor',
+    location: 'New York, USA',
+    date: 'October, 2019 - June, 2021',
+    themeColor: '#ffc800'
+  },
+  {
+    title: 'WordPress Developer',
+    companyName: 'Midland Digital Solutions',
+    location: 'Lagos, Nigeria',
+    date: 'August, 2020 - December, 2020',
+    themeColor: '#00b884'
+  },
+  {
+    title: 'Frontend Developer (Angular)',
+    companyName: 'Terragon Group',
+    location: 'Lagos, Nigeria',
+    date: 'June, 2019 - February, 2020',
+    themeColor: '#fd7171'
+  },
+  {
+    title: 'Math Tutor',
+    companyName: 'Phoebestar Royalty Schools',
+    location: 'Osogbo, Nigeria',
+    date: 'October 2014 - July 2018',
+    themeColor: '#7b68ee'
+  },
+
+]
+
+
 
 
 

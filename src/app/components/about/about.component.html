@@ -9,7 +9,7 @@
       available for remote work - if you would like to build something together, <a href="tel:+2349051450310">get in
         touch?</a></p>
 
-    <div class="dev-icons" #devIcons>
+    <div class="dev-icons">
       <i class="fab fa-2x fa-html5"></i>
       <i class="fab fa-2x fa-css3-alt"></i>
       <i class="fab fa-2x fa-sass"></i>
@@ -22,78 +22,17 @@
   <div class="card p-0 py-5">
     <h1 class="header  mb-3"><span class="about__text__two">Work</span> Experience</h1>
     <div class="row">
-      <div class="col-sm-6">
-        <div id="card__one">
-          <h4 class="card-header">Frontend Developer (Angular)</h4>
+      <div class="col-sm-6" *ngFor="let job of jobs">
+        <div id="card" [ngStyle]="{'border-left': '5px solid', 'border-color':job.themeColor}">
+          <h4 class="card-header" [ngStyle]="{'background-color': job.themeColor}">{{ job.title }}</h4>
           <div class="card-body">
-            <h5 class="card-title">Renmoney MFB</h5>
-            <h6 class="card-title">Lagos, Nigeria</h6>
-            <p class="card-text muted">March, 2020 - present</p>
-            <!-- <p class="card-text more" (click)="openModal1(template1)">Read more</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div id="card__two">
-          <h4 class="card-header">Frontend Developer (Angular)</h4>
-          <div class="card-body">
-            <h5 class="card-title">Tr1pp</h5>
-            <h6 class="card-title">London, UK</h6>
-            <p class="card-text muted">July, 2021 - present</p>
-            <!-- <p class="card-text more" (click)="openModal1(template6)">Read more</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div id="card__three">
-          <h4 class="card-header">WordPress Developer</h4>
-          <div class="card-body">
-            <h5 class="card-title">NXTFactor</h5>
-            <h6 class="card-title">New York, USA</h6>
-            <p class="card-text muted">October, 2019 - June, 2021</p>
-            <!-- <p class="card-text more" (click)="openModal2(template2)">Read more</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div id="card__four">
-          <h4 class="card-header">WordPress Developer</h4>
-          <div class="card-body">
-            <h5 class="card-title">Midland Digital Solutions</h5>
-            <h6 class="card-title">Lagos, Nigeria</h6>
-            <p class="card-text muted">August, 2020 - December, 2020</p>
-            <!-- <p class="card-text more" (click)="openModal3(template3)">Read more</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div id="card__five">
-          <h4 class="card-header">Frontend Developer (Angular)</h4>
-          <div class="card-body">
-            <h5 class="card-title">Terragon Group</h5>
-            <h6 class="card-title">Lagos, Nigeria</h6>
-            <p class="card-text muted">June, 2019 - February, 2020</p>
-            <!-- <p class="card-text more" (click)="openModal4(template4)">Read more</p> -->
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div id="card__six">
-          <h4 class="card-header">Teacher / Head of ICT</h4>
-          <div class="card-body">
-            <h5 class="card-title">Phoebestar Royalty Schools</h5>
-            <h6 class="card-title">Osogbo, Nigeria</h6>
-            <p class="card-text muted">October 2014 - July 2018</p>
-            <!-- <p class="card-text more" (click)="openModal5(template5)">Read more</p> -->
+            <h5 class="card-title">{{ job.companyName }}</h5>
+            <h6 class="card-title">{{ job.location }}</h6>
+            <p class="card-text muted">{{ job.date }}</p>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
   </div>
 
   <div id="contact" class="contact card">
@@ -120,89 +59,6 @@
       <a href="https://www.instagram.com/lawaldarekayode/" target="_blank" class="contact-icon-link">
         <i class="fab fa-3x fa-instagram"></i>
       </a>
-
-      <!-- <img src="assets/contacts/viber.svg" alt="" class="contact-icon"> -->
-
     </div>
   </div>
 </div>
-
-
-
-<!-- <ng-template #template1>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Description</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    => Build and manage a loan web application platform that allows millions of users to get a loan and save money using
-    HTML, CSS, SASS, JavaScript, Typescript, GSAP, and Angular.<br><br>
-    => Build a widget for the loan application to be used on any other platforms of our partners using Angular.<br><br>
-  </div>
-</ng-template>
-<ng-template #template6>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Description</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    => Build and manage a web application platform that allows millions of users to get a loan and save money using
-    HTML, CSS, SASS, JavaScript, Typescript, GSAP, and Angular.<br><br>
-  </div>
-</ng-template>
-<ng-template #template2>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Description</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    => Built beautiful websites with WordPress using page builders like Elementor, WP Bakery etc.<br><br>
-    => Managed websites build with WordPress either using a paid template or using a mockup.<br><br>
-    => Hosted and deployed WordPress websites on various hosting companies.<br><br>
-  </div>
-</ng-template>
-<ng-template #template3>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Description</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    => Built beautiful websites with WordPress using page builders like Elementor, WP Bakery etc.<br><br>
-    => Managed websites build with WordPress.<br><br>
-    => Hosted and deployed WordPress websites on various hosting companies.<br><br>
-  </div>
-</ng-template>
-<ng-template #template4>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Description</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    => Built and managed a survey web application platform for creating survey and data collections for our clients
-    using HTML, CSS, SASS, JavaScript, Typescript, and Angular.<br><br>
-  </div>
-</ng-template>
-<ng-template #template5>
-  <div class="modal-header">
-    <h4 class="modal-title pull-left">Description</h4>
-    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  <div class="modal-body">
-    => Taught Mathematics and Further Mathematics.<br><br>
-    => Was the ICT Director with the responsibility to manage all the IT infrastructure and coordinate our Online exams.
-    I am also responsible for the management of the school portal.<br><br>
-    => Built and managed the school website using WordPress.<br><br>
-  </div>
-</ng-template> -->

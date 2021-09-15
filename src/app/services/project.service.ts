@@ -1,4 +1,4 @@
-import { db } from './../../db/db';
+import { db, jobs } from './../../db/db';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -15,5 +15,9 @@ export class ProjectService {
 
   getProjects() {
     return db;
+  }
+
+  getJobs() {
+    return jobs;
   }
 }
