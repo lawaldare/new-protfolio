@@ -180,6 +180,13 @@ export const db = [
 
 export const jobs = [
   {
+    title: 'Angular Developer',
+    companyName: 'Code & Care',
+    location: 'Kharkiv, Ukraine',
+    date: 'September, 2020 - present',
+    themeColor: '#fd7171'
+  },
+  {
     title: 'Frontend Developer (Angular)',
     companyName: 'Renmoney MFB',
     location: 'Lagos, Nigeria',
