@@ -197,15 +197,8 @@ export const jobs = [
     title: 'Frontend Developer (Angular)',
     companyName: 'Tr1pp',
     location: 'London, UK',
-    date: 'July, 2021 - present',
+    date: 'July, 2021 - November, 2021',
     themeColor: '#fd71af'
-  },
-  {
-    title: 'Wordpress Developer',
-    companyName: 'Butleroy',
-    location: 'Upper Austria, Austria',
-    date: 'February, 2021 - present',
-    themeColor: '#49ccf9'
   },
   {
     title: 'Wordpress Developer',
@@ -233,7 +226,7 @@ export const jobs = [
     companyName: 'Phoebestar Royalty Schools',
     location: 'Osogbo, Nigeria',
     date: 'October 2014 - July 2018',
-    themeColor: '#7b68ee'
+    themeColor: '#49ccf9'
   },
 
 ]
