@@ -128,6 +128,14 @@ export const db = [
     desc: 'This is a website for physical fitness based in California, USA. It is owned by Talia Adams.'
   },
   {
+    name: 'Data Info',
+    imageURL: 'assets/images/data-info.png',
+    stack: 'angular',
+    viewLink: 'https://data-info-2022.web.app/',
+    repoLink: 'https://github.com/lawaldare/data-info',
+    desc: 'This is a project that make use of jsonplaceholder data and display them with filtering and pagination functionality'
+  },
+  {
     name: 'Data Warehouse',
     imageURL: 'assets/images/data-warehouse.png',
     stack: 'javascript',
@@ -180,18 +188,18 @@ export const db = [
 
 export const jobs = [
   {
+    title: 'Lead Web Developer',
+    companyName: 'Renmoney MFB',
+    location: 'Lagos, Nigeria',
+    date: 'March, 2020 - present',
+    themeColor: '#7b68ee'
+  },
+  {
     title: 'Angular Developer',
     companyName: 'Code & Care',
     location: 'Kharkiv, Ukraine',
     date: 'September, 2020 - present',
     themeColor: '#fd7171'
-  },
-  {
-    title: 'Frontend Developer (Angular)',
-    companyName: 'Renmoney MFB',
-    location: 'Lagos, Nigeria',
-    date: 'March, 2020 - present',
-    themeColor: '#7b68ee'
   },
   {
     title: 'Frontend Developer (Angular)',
