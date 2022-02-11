@@ -188,7 +188,7 @@ export const db = [
 
 export const jobs = [
   {
-    title: 'Lead Web Developer',
+    title: 'Lead Frontend Developer',
     companyName: 'Renmoney MFB',
     location: 'Lagos, Nigeria',
     date: 'March, 2020 - present',
