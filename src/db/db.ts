@@ -188,10 +188,10 @@ export const db = [
 
 export const jobs = [
   {
-    title: 'Lead Frontend Developer',
-    companyName: 'Renmoney MFB',
-    location: 'Lagos, Nigeria',
-    date: 'March, 2020 - present',
+    title: 'Frontend Engineer',
+    companyName: 'Origin Markets',
+    location: 'London, United Kingdom',
+    date: 'March, 2021 - present',
     themeColor: '#7b68ee'
   },
   {
@@ -202,9 +202,16 @@ export const jobs = [
     themeColor: '#fd7171'
   },
   {
+    title: 'Engineering Team Lead',
+    companyName: 'Renmoney MFB',
+    location: 'Lagos, Nigeria',
+    date: 'March, 2020 - April, 2022',
+    themeColor: '#49ccf9'
+  },
+  {
     title: 'Frontend Developer (Angular)',
     companyName: 'Tr1pp',
-    location: 'London, UK',
+    location: 'London, United Kingdom',
     date: 'July, 2021 - November, 2021',
     themeColor: '#fd71af'
   },
