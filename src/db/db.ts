@@ -209,7 +209,7 @@ export const jobs = [
     themeColor: '#49ccf9'
   },
   {
-    title: 'Frontend Developer (Angular)',
+    title: 'Frontend Engineer',
     companyName: 'Tr1pp',
     location: 'London, United Kingdom',
     date: 'July, 2021 - November, 2021',
@@ -230,7 +230,7 @@ export const jobs = [
     themeColor: '#00b884'
   },
   {
-    title: 'Frontend Developer (Angular)',
+    title: 'Frontend Engineer',
     companyName: 'Terragon Group',
     location: 'Lagos, Nigeria',
     date: 'June, 2019 - February, 2020',
