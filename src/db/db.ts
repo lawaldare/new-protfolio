@@ -1,12 +1,12 @@
 export const db = [
-  {
-    name: 'Countries With Themes',
-    imageURL: 'assets/images/countries.png',
-    stack: 'angular',
-    viewLink: 'https://countries-with-theme-switch.netlify.com',
-    repoLink: 'https://github.com/lawaldare/countries-theme-switch',
-    desc: 'The app shows over 250 countries with their details and enable user to switch from dark mode to light mode and also to search and filter by region.'
-  },
+  // {
+  //   name: 'Countries With Themes',
+  //   imageURL: 'assets/images/countries.png',
+  //   stack: 'angular',
+  //   viewLink: 'https://countries-with-theme-switch.netlify.com',
+  //   repoLink: 'https://github.com/lawaldare/countries-theme-switch',
+  //   desc: 'The app shows over 250 countries with their details and enable user to switch from dark mode to light mode and also to search and filter by region.'
+  // },
   {
     name: 'Clock',
     imageURL: 'assets/images/clock.jpg',
