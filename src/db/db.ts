@@ -191,7 +191,7 @@ export const jobs = [
     title: 'Frontend Engineer',
     companyName: 'Origin Markets',
     location: 'London, United Kingdom',
-    date: 'March, 2021 - present',
+    date: 'March, 2022 - present',
     themeColor: '#7b68ee'
   },
   {
