@@ -1,12 +1,12 @@
 export const db = [
-  {
-    name: 'Countries With Themes',
-    imageURL: 'assets/images/countries.png',
-    stack: 'angular',
-    viewLink: 'https://countries-with-theme-switch.netlify.com',
-    repoLink: 'https://github.com/lawaldare/countries-theme-switch',
-    desc: 'The app shows over 250 countries with their details and enable user to switch from dark mode to light mode and also to search and filter by region.'
-  },
+  // {
+  //   name: 'Countries With Themes',
+  //   imageURL: 'assets/images/countries.png',
+  //   stack: 'angular',
+  //   viewLink: 'https://countries-with-theme-switch.netlify.com',
+  //   repoLink: 'https://github.com/lawaldare/countries-theme-switch',
+  //   desc: 'The app shows over 250 countries with their details and enable user to switch from dark mode to light mode and also to search and filter by region.'
+  // },
   {
     name: 'Clock',
     imageURL: 'assets/images/clock.jpg',
@@ -167,14 +167,14 @@ export const db = [
     repoLink: 'https://github.com/lawaldare/shortly',
     desc: 'This app enable users to easily shorten their long Urls with a hashed keys.'
   },
-  {
-    name: 'Slapdick Bullies',
-    imageURL: 'assets/images/slapdick.png',
-    stack: 'wordpress',
-    viewLink: 'https://slapdickbullies.com/',
-    repoLink: 'https://slapdickbullies.com/',
-    desc: 'This is a website for selling dogs'
-  },
+  // {
+  //   name: 'Slapdick Bullies',
+  //   imageURL: 'assets/images/slapdick.png',
+  //   stack: 'wordpress',
+  //   viewLink: 'https://slapdickbullies.com/',
+  //   repoLink: 'https://slapdickbullies.com/',
+  //   desc: 'This is a website for selling dogs'
+  // },
   {
     name: 'PJ Confidential',
     imageURL: 'assets/images/pjconfidential.png',
