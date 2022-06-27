@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
 
     writer
       .changeTypeColor('#49ccf9')
-      .type("a frontend developer")
+      .type("a frontend engineer")
       .rest(500)
       .clear()
       .changeTypeColor('#00b884')

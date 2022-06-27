@@ -191,14 +191,14 @@ export const jobs = [
     title: 'Frontend Engineer',
     companyName: 'Origin Markets',
     location: 'London, United Kingdom',
-    date: 'March, 2021 - present',
+    date: 'March, 2022 - present',
     themeColor: '#7b68ee'
   },
   {
     title: 'Angular Developer',
     companyName: 'Code & Care',
     location: 'Kharkiv, Ukraine',
-    date: 'September, 2020 - present',
+    date: 'September, 2021 - June, 2022',
     themeColor: '#fd7171'
   },
   {
