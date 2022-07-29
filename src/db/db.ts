@@ -202,7 +202,7 @@ export const jobs = [
     themeColor: '#fd7171'
   },
   {
-    title: 'Engineering Team Lead',
+    title: 'Frontend Engineer',
     companyName: 'Renmoney MFB',
     location: 'Lagos, Nigeria',
     date: 'March, 2020 - April, 2022',
