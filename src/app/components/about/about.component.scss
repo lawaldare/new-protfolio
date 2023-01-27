@@ -109,6 +109,21 @@ svg {
     margin-right: 40px;
     color: var(--other-color-one) !important;
   }
+
+  .rxjs,
+  .ngrx {
+    height: 30px;
+    width: 30px;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(2);
+    }
+  }
+
+  .rxjs {
+    margin-right: 40px;
+  }
 }
 
 .contact {
