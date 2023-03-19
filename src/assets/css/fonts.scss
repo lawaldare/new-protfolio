@@ -1,63 +1,52 @@
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/100.otf") format("otf"),
-    url("../font/Axiforma/100.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/300.otf") format("otf"),
-    url("../font/Axiforma/300.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/400.otf") format("otf"),
-    url("../font/Axiforma/400.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-Regular.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/500.otf") format("otf"),
-    url("../font/Axiforma/500.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/600.otf") format("otf"),
-    url("../font/Axiforma/600.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-SemiBold.ttf")
+    format("truetype");
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/700.otf") format("otf"),
-    url("../font/Axiforma/700.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/800.otf") format("otf"),
-    url("../font/Axiforma/800.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: url("../font/JetBrains_Mono/JetBrainsMono-ExtraBold.ttf")
+    format("truetype");
   font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Axiforma";
-  src: url("../font/Axiforma/900.otf") format("otf"),
-    url("../font/Axiforma/900.ttf") format("truetype");
-  font-weight: 900;
   font-style: normal;
 }
