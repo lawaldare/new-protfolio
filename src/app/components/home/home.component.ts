@@ -2,33 +2,23 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import Typewriter from 't-writer.js';
 import { gsap, Power2, Elastic } from 'gsap/all';
 
-
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
   @ViewChild('tw') typewriterElement;
-  @ViewChild('mainHeader', { static: true }) mainHeader: ElementRef<HTMLSpanElement>;
+  @ViewChild('mainHeader', { static: true }) mainHeader: ElementRef<
+    HTMLSpanElement
+  >;
   @ViewChild('buttons', { static: true }) buttons: ElementRef<HTMLDivElement>;
 
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-    this.initAnimation();
-  }
-
-
-  initAnimation() {
-    gsap.from(this.mainHeader.nativeElement, { y: -500, opacity: 0, duration: 2, ease: 'back' });
-    gsap.from(this.buttons.nativeElement, { y: 500, opacity: 0, duration: 2, ease: 'back' });
-  }
   ngAfterViewInit(): void {
-
     const target = this.typewriterElement.nativeElement;
 
     const writer = new Typewriter(target, {
@@ -36,22 +26,18 @@ export class HomeComponent implements OnInit {
       loop: true,
       typeSpeed: 100,
       deleteSpeed: 150,
-      cursorClass: 'tw-cursor'
-    })
+      cursorClass: 'tw-cursor',
+    });
 
     writer
       .changeTypeColor('#49ccf9')
-      .type("a frontend engineer")
+      .type('a frontend engineer')
       .rest(500)
       .clear()
       .changeTypeColor('#00b884')
-      .type("a wordpress developer")
+      .type('a wordpress developer')
       .rest(500)
       .clear()
-      .start()
-
+      .start();
   }
-
-
 }
-
