@@ -2,10 +2,6 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
-import { ModalModule } from "ngx-bootstrap/modal";
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -33,15 +29,10 @@ import { CreditCardDirective } from './credit-card.directive';
     ReposComponent,
     RepoComponent,
     PlaygroundComponent,
-    CreditCardDirective
+    CreditCardDirective,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ModalModule.forRoot(),
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [Title],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
