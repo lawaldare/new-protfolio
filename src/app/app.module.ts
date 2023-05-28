@@ -17,6 +17,8 @@ import { DailiesComponent } from './components/dailies/dailies.component';
 import { SafePipe } from './@pipe/safe.pipe';
 import { ReposComponent } from './repos/repos.component';
 import { RepoComponent } from './components/repo/repo.component';
+import { PlaygroundComponent } from './components/playground/playground.component';
+import { CreditCardDirective } from './credit-card.directive';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RepoComponent } from './components/repo/repo.component';
     DailiesComponent,
     SafePipe,
     ReposComponent,
-    RepoComponent
+    RepoComponent,
+    PlaygroundComponent,
+    CreditCardDirective
   ],
   imports: [
     BrowserModule,
