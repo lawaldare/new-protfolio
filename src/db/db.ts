@@ -153,10 +153,10 @@ export const db = [
   },
   {
     name: 'Bitcoin Calculator',
-    imageURL: 'assets/images/bitcoin.jpg',
-    stack: 'javascript',
-    viewLink: 'https://lawaldare.github.io/bitcoin-calculator/',
-    repoLink: 'https://github.com/lawaldare/bitcoin-calculator',
+    imageURL: 'assets/images/bitcoin.png',
+    stack: 'angular',
+    viewLink: 'https://bitcoin-calculator.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/bitcoin-angular',
     desc:
       'This app enable users dealing with bitcoin to know their current status, either they are making profit or they are not.',
   },
