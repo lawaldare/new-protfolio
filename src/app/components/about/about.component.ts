@@ -9,6 +9,11 @@ export interface Job {
   themeColor: string;
 }
 
+export interface ContactIcon {
+  link: string;
+  icon: string;
+}
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -16,10 +21,12 @@ export interface Job {
 })
 export class AboutComponent implements OnInit {
   jobs: Job[];
+  contactIcons: ContactIcon[];
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
     this.jobs = this.projectService.getJobs();
+    this.contactIcons = this.projectService.getContactIcons();
   }
 }

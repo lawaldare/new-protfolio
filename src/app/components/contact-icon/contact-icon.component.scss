@@ -1,0 +1,10 @@
+.fab,
+.fas {
+  color: var(--other-color-one);
+  transition: all 0.5s;
+  margin-right: 40px;
+
+  &:hover {
+    transform: scale(2);
+  }
+}

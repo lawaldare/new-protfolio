@@ -54,6 +54,18 @@
   width: 100% !important;
 }
 
+svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 40px;
+  transition: all 0.2s;
+  fill: white;
+  color: var(--other-color-one);
+  &:hover {
+    transform: scale(2);
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .navbar-light .navbar-toggler-icon {
     background: none !important;

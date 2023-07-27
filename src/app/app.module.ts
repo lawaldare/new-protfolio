@@ -16,6 +16,7 @@ import { RepoComponent } from './components/repo/repo.component';
 import { PlaygroundComponent } from './components/playground/playground.component';
 import { CreditCardDirective } from './credit-card.directive';
 import { JobCardComponent } from './components/job-card/job-card.component';
+import { ContactIconComponent } from './components/contact-icon/contact-icon.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { JobCardComponent } from './components/job-card/job-card.component';
     PlaygroundComponent,
     CreditCardDirective,
     JobCardComponent,
+    ContactIconComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [Title],

@@ -254,3 +254,34 @@ export const jobs = [
     themeColor: '#49ccf9',
   },
 ];
+
+export const contactIcons = [
+  {
+    link: 'https://www.facebook.com/lawal.dare',
+    icon: 'fab fa-facebook-square',
+  },
+  {
+    link: 'https://twitter.com/lawaldarekayode',
+    icon: 'fab fa-twitter-square',
+  },
+  {
+    link: 'https://www.linkedin.com/in/dare-lawal/',
+    icon: 'fab fa-linkedin',
+  },
+  {
+    link: 'https://github.com/lawaldare',
+    icon: 'fab fa-github-square',
+  },
+  {
+    link: 'mailto:lawaldare@gmail.com',
+    icon: 'fas fa-envelope',
+  },
+  {
+    link: 'tel:+2349051450310',
+    icon: 'fas fa-phone',
+  },
+  {
+    link: 'https://www.instagram.com/lawaldarekayode/',
+    icon: 'fab fa-instagram',
+  },
+];

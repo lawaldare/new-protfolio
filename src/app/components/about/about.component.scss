@@ -63,18 +63,6 @@
   }
 }
 
-svg {
-  height: 30px;
-  width: 30px;
-  margin-right: 40px;
-  transition: all 0.2s;
-  fill: white;
-  color: var(--other-color-one);
-  &:hover {
-    transform: scale(2);
-  }
-}
-
 .dev-icons {
   padding: 20px;
   display: flex;
@@ -110,17 +98,6 @@ svg {
 .contact-icons {
   display: flex;
   align-items: center;
-
-  .fab,
-  .fas {
-    color: var(--other-color-one);
-    transition: all 0.5s;
-    margin-right: 40px;
-
-    &:hover {
-      transform: scale(2);
-    }
-  }
 }
 
 @media only screen and (max-width: 425px) {
