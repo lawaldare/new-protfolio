@@ -52,16 +52,7 @@
   <div class="card p-0 py-5">
     <h1 class="header  mb-3"><span class="about__text__two">Work</span> Experience</h1>
     <div class="row">
-      <div class="col-sm-6" *ngFor="let job of jobs">
-        <div id="card" [ngStyle]="{'border-left': '5px solid', 'border-color':job.themeColor}">
-          <h4 class="card-header" [ngStyle]="{'background-color': job.themeColor}">{{ job.title }}</h4>
-          <div class="card-body">
-            <h5 class="card-title">{{ job.companyName }}</h5>
-            <h6 class="card-title">{{ job.location }}</h6>
-            <p class="card-text muted">{{ job.date }}</p>
-          </div>
-        </div>
-      </div>
+      <app-job-card class="col-sm-6" *ngFor="let job of jobs" [job]="job"></app-job-card>
     </div>
   </div>
 

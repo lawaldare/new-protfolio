@@ -63,31 +63,6 @@
   }
 }
 
-#card {
-  box-shadow: 0 5px 15px rgb(16 30 54 / 10%);
-  margin-bottom: 30px;
-  h4 {
-    color: #fff;
-    border-radius: unset !important;
-  }
-
-  h5 {
-    color: var(--header-text-color);
-  }
-
-  h6,
-  .muted {
-    color: var(--main-text-color);
-    font-weight: 600;
-  }
-
-  .more {
-    color: #7b68ee;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-}
-
 svg {
   height: 30px;
   width: 30px;
