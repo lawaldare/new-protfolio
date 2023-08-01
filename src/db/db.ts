@@ -198,10 +198,17 @@ export const db = [
 
 export const jobs = [
   {
+    title: 'Software Developer',
+    companyName: 'Betsson Group',
+    location: 'Ta`Xbiex, Malta',
+    date: 'September, 2023 - present',
+    themeColor: '#00b884',
+  },
+  {
     title: 'Frontend Engineer',
     companyName: 'Origin Markets',
     location: 'London, United Kingdom',
-    date: 'March, 2022 - present',
+    date: 'March, 2022 - June, 2023',
     themeColor: '#7b68ee',
   },
   {
