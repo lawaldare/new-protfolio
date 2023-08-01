@@ -198,7 +198,7 @@ export const db = [
 
 export const jobs = [
   {
-    title: 'Software Developer',
+    title: 'Software Engineer',
     companyName: 'Betsson Group',
     location: 'Ta`Xbiex, Malta',
     date: 'September, 2023 - present',
