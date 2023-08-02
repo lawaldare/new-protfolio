@@ -10,10 +10,11 @@
   --other-color-four: #ffc800;
   --other-color-five: #00b884;
   --other-color-six: #fd7171;
+  --color-black: #000;
 }
 
 .header {
-  color: var(--header-text-color);
+  color: var(--main-text-color);
   font-size: 50px;
   line-height: 69px;
   font-weight: bold;

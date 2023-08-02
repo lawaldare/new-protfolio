@@ -1,22 +1,9 @@
-$color-primary: #12232e;
-$color-primary-light: #203647;
-$color-primary-dark: #203647;
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-white: #eefbfb;
 $color-black: #000;
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-dark-3: #333;
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #007cc7;
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+$color-white: #fff;
 
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  // position: relative;
   height: 400px;
   width: 300px;
   cursor: pointer;
@@ -83,7 +70,7 @@ $color-tertiary-dark: #5643fa;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--header-text-color);
+    color: var(--main-text-color);
     letter-spacing: 0.2rem;
   }
 }
