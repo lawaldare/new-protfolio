@@ -12,8 +12,10 @@
     </div>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let project of projects">
-        <i class="fab fa-github mr-2" (click)="goToRepoLink(project.repo)"></i>
         <span (click)="goToProjectWebsite(project.link)">{{project.name}}</span>
+        <span (click)="goToRepoLink(project.repo)">
+          <i class="fab fa-github mr-2"></i>
+        </span>
       </li>
     </ul>
   </div>
