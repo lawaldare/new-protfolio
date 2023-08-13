@@ -29,7 +29,6 @@
 
 .list-group-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   span {
@@ -37,6 +36,6 @@
     font-weight: bolder;
     text-decoration: underline;
     color: blue;
-    cursor: pointer;
   }
+  cursor: pointer;
 }

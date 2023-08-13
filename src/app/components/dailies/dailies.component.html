@@ -12,8 +12,8 @@
     </div>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let project of projects">
+        <i class="fab fa-github mr-2" (click)="goToRepoLink(project.repo)"></i>
         <span (click)="goToProjectWebsite(project.link)">{{project.name}}</span>
-        <img src="assets/contacts/github.png" alt="" class="contact-icon" (click)="goToRepoLink(project.repo)">
       </li>
     </ul>
   </div>
