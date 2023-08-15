@@ -6,8 +6,14 @@
 
 .header {
   span {
-    rotate: (346deg);
+    rotate: (345deg);
     display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  span:hover {
+    rotate: (360deg);
   }
 }
 
