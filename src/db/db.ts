@@ -1,5 +1,14 @@
 export const db = [
   {
+    name: 'Ecommerce',
+    imageURL: 'assets/images/ecommerce.png',
+    stack: 'angular',
+    viewLink: 'https://ecommerce-ngrx.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/ecommerce-angular-ngrx',
+    desc:
+      'This is a amazon-theme-like ecommerce application built with Angular and using Ngrx for state management',
+  },
+  {
     name: 'Countries With Themes',
     imageURL: 'assets/images/countries.png',
     stack: 'angular',
