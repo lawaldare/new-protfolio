@@ -1,47 +1,52 @@
 export const projectsDB = [
   {
-    name: 'Loop 1 - Step 1',
+    name: 'Pricing Plan',
     link: 'https://daily-projects.github.io/Loop-1---Step-1/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-1',
   },
   {
-    name: 'Loop 1 - Step 2',
+    name: 'Payment Screen',
     link: 'https://daily-projects.github.io/Loop-1---Step-2/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-2',
   },
   {
-    name: 'Loop 1 - Step 3',
+    name: 'Order Confirmation',
     link: 'https://priceless-kare-72c3cc.netlify.app/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-3',
   },
   {
-    name: 'Loop 1 - Step 4',
+    name: 'Messenger',
     link: 'https://daily-projects.github.io/Loop-1---Step-4/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-4',
   },
   {
-    name: 'Loop 1 - Step 5',
+    name: 'Boarding Pass',
     link: 'https://daily-projects.github.io/Loop-1---Step-5/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-5',
   },
   {
-    name: 'Loop 1 - Step 6',
+    name: 'Login Screen',
     link: 'https://daily-projects.github.io/Loop-1---Step-6/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-6',
   },
   {
-    name: 'Loop 1 - Step 7',
+    name: 'Blog Post',
     link: 'https://daily-projects.github.io/Loop-1---Step-7/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-7',
   },
   {
-    name: 'Loop 1 - Step 8',
+    name: 'Travel Guide',
     link: 'https://daily-projects.github.io/Loop-1---Step-8/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-8',
   },
   {
-    name: 'Loop 1 - Step 9',
+    name: 'Wallet',
     link: 'https://daily-projects.github.io/Loop-1---Step-9/',
     repo: 'https://github.com/daily-projects/Loop-1---Step-9',
+  },
+  {
+    name: 'Apple Watch',
+    link: 'https://daily-projects.github.io/apple-watch/',
+    repo: 'https://github.com/daily-projects/apple-watch',
   },
 ];
