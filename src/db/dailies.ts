@@ -62,4 +62,9 @@ export const elements = [
     link: 'https://daily-projects.github.io/quick-change-tab/',
     repo: 'https://github.com/daily-projects/quick-change-tab',
   },
+  {
+    name: 'Smart Timer',
+    link: 'https://daily-projects.github.io/smart-timer/',
+    repo: 'https://github.com/daily-projects/smart-timer',
+  },
 ];
