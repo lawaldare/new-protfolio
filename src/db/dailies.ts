@@ -49,4 +49,9 @@ export const projectsDB = [
     link: 'https://daily-projects.github.io/apple-watch/',
     repo: 'https://github.com/daily-projects/apple-watch',
   },
+  {
+    name: 'Wash Cycle',
+    link: 'https://daily-projects.github.io/wash-cycle/',
+    repo: 'https://github.com/daily-projects/wash-cycle',
+  },
 ];
