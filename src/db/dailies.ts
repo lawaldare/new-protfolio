@@ -55,3 +55,11 @@ export const projectsDB = [
     repo: 'https://github.com/daily-projects/wash-cycle',
   },
 ];
+
+export const elements = [
+  {
+    name: 'Progress Navigation',
+    link: 'https://daily-projects.github.io/quick-change-tab/',
+    repo: 'https://github.com/daily-projects/quick-change-tab',
+  },
+];

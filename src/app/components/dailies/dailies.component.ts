@@ -1,4 +1,4 @@
-import { projectsDB } from './../../../db/dailies';
+import { elements, projectsDB } from './../../../db/dailies';
 import { DailyProject } from './../../models/dailyProject.model';
 import { Component, HostListener, OnInit } from '@angular/core';
 
@@ -12,6 +12,7 @@ export class DailiesComponent implements OnInit {
   innerWidth!: number;
 
   projects: DailyProject[] = projectsDB;
+  elements: DailyProject[] = elements;
 
   @HostListener('window:resize', ['$event'])
   onResize() {
