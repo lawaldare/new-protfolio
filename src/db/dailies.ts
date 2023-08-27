@@ -67,4 +67,14 @@ export const elements = [
     link: 'https://daily-projects.github.io/smart-timer/',
     repo: 'https://github.com/daily-projects/smart-timer',
   },
+  {
+    name: 'Toggles',
+    link: 'https://daily-projects.github.io/toggles/',
+    repo: 'https://github.com/daily-projects/toggles',
+  },
+  {
+    name: 'Toggling Tabs',
+    link: 'https://daily-projects.github.io/toggling-tabs/',
+    repo: 'https://github.com/daily-projects/toggling-tabs',
+  },
 ];
