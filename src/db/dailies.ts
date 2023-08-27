@@ -77,4 +77,9 @@ export const elements = [
     link: 'https://daily-projects.github.io/toggling-tabs/',
     repo: 'https://github.com/daily-projects/toggling-tabs',
   },
+  {
+    name: 'Step Progess',
+    link: 'https://daily-projects.github.io/step-progress/',
+    repo: 'https://github.com/daily-projects/step-progress',
+  },
 ];
