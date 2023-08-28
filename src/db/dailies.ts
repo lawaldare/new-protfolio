@@ -82,4 +82,9 @@ export const elements = [
     link: 'https://daily-projects.github.io/step-progress/',
     repo: 'https://github.com/daily-projects/step-progress',
   },
+  {
+    name: 'Sidebar',
+    link: 'https://daily-projects.github.io/sidebar/',
+    repo: 'https://github.com/daily-projects/sidebar',
+  },
 ];
