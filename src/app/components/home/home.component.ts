@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import Typewriter from 't-writer.js';
-import { gsap, Power2, Elastic } from 'gsap/all';
 
 @Component({
   selector: 'app-home',
