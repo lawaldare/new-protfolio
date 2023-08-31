@@ -13,8 +13,6 @@ import { DailiesComponent } from './components/dailies/dailies.component';
 import { SafePipe } from './@pipe/safe.pipe';
 import { ReposComponent } from './repos/repos.component';
 import { RepoComponent } from './components/repo/repo.component';
-import { PlaygroundComponent } from './components/playground/playground.component';
-import { CreditCardDirective } from './credit-card.directive';
 import { JobCardComponent } from './components/job-card/job-card.component';
 import { ContactIconComponent } from './components/contact-icon/contact-icon.component';
 
@@ -30,8 +28,6 @@ import { ContactIconComponent } from './components/contact-icon/contact-icon.com
     SafePipe,
     ReposComponent,
     RepoComponent,
-    PlaygroundComponent,
-    CreditCardDirective,
     JobCardComponent,
     ContactIconComponent,
   ],

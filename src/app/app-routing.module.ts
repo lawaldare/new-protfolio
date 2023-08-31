@@ -5,7 +5,6 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PlaygroundComponent } from './components/playground/playground.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'dailies', component: DailiesComponent },
   { path: 'repos', component: ReposComponent },
-  { path: 'playground', component: PlaygroundComponent },
   { path: '**', component: HomeComponent },
 ];
 
