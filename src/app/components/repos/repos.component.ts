@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Repo } from '../models/repo.model';
+import { Repo } from '../../models/repo.model';
+import { RepoComponent } from '../repo/repo.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-repos',
   templateUrl: './repos.component.html',
   styleUrls: ['./repos.component.scss'],
+  standalone: true,
+  imports: [CommonModule, RepoComponent],
 })
 export class ReposComponent implements OnInit {
   repos: Repo[] = [

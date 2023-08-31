@@ -10,8 +10,8 @@ fdescribe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NavbarComponent, SafePipe],
-    }).compileComponents();
+    imports: [NavbarComponent, SafePipe],
+}).compileComponents();
   });
 
   beforeEach(() => {

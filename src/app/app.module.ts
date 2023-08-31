@@ -11,14 +11,17 @@ import { HomeComponent } from './components/home/home.component';
 import { PortfolioCardComponent } from './components/portfolio-card/portfolio-card.component';
 import { DailiesComponent } from './components/dailies/dailies.component';
 import { SafePipe } from './@pipe/safe.pipe';
-import { ReposComponent } from './repos/repos.component';
+import { ReposComponent } from './components/repos/repos.component';
 import { RepoComponent } from './components/repo/repo.component';
 import { JobCardComponent } from './components/job-card/job-card.component';
 import { ContactIconComponent } from './components/contact-icon/contact-icon.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
     NavbarComponent,
     AboutComponent,
     PortfolioComponent,
@@ -31,7 +34,6 @@ import { ContactIconComponent } from './components/contact-icon/contact-icon.com
     JobCardComponent,
     ContactIconComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [Title],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

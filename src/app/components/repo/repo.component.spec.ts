@@ -8,8 +8,8 @@ describe('RepoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RepoComponent ]
-    })
+    imports: [RepoComponent]
+})
     .compileComponents();
   }));
 

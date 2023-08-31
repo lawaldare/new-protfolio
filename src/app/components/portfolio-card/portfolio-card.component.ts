@@ -2,9 +2,10 @@ import { Project } from './../../project.model';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio-card',
-  templateUrl: './portfolio-card.component.html',
-  styleUrls: ['./portfolio-card.component.scss']
+    selector: 'app-portfolio-card',
+    templateUrl: './portfolio-card.component.html',
+    styleUrls: ['./portfolio-card.component.scss'],
+    standalone: true
 })
 export class PortfolioCardComponent implements OnInit {
 

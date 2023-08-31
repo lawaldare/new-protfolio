@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from 'src/app/services/project.service';
+import { ContactIconComponent } from '../contact-icon/contact-icon.component';
+import { JobCardComponent } from '../job-card/job-card.component';
+import { CommonModule } from '@angular/common';
 
 export interface Job {
   title: string;
@@ -18,6 +21,8 @@ export interface ContactIcon {
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
+  standalone: true,
+  imports: [CommonModule, JobCardComponent, ContactIconComponent],
 })
 export class AboutComponent implements OnInit {
   jobs: Job[];
