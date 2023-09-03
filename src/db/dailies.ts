@@ -54,6 +54,11 @@ export const projectsDB = [
     link: 'https://daily-projects.github.io/wash-cycle/',
     repo: 'https://github.com/daily-projects/wash-cycle',
   },
+  {
+    name: 'Account Settings',
+    link: 'https://daily-projects.github.io/account-settings/',
+    repo: 'https://github.com/daily-projects/account-settings',
+  },
 ];
 
 export const elements = [
