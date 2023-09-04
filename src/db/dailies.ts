@@ -92,4 +92,9 @@ export const elements = [
     link: 'https://daily-projects.github.io/sidebar/',
     repo: 'https://github.com/daily-projects/sidebar',
   },
+  {
+    name: 'Custom Video Player',
+    link: 'https://daily-projects.github.io/video-player/',
+    repo: 'https://github.com/daily-projects/video-player',
+  },
 ];
