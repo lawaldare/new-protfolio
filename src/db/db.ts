@@ -1,5 +1,14 @@
 export const db = [
   {
+    name: 'Football Standings',
+    imageURL: 'assets/images/football-standings.png',
+    stack: 'angular',
+    viewLink: 'https://football-standingss.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/football-standing',
+    desc:
+      'This is a app that shows the football standings of 4 popular leagues. Built with Angular 16 and implemented with Angular signals',
+  },
+  {
     name: 'Ecommerce',
     imageURL: 'assets/images/ecommerce.png',
     stack: 'angular',
