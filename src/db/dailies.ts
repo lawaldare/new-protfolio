@@ -59,6 +59,11 @@ export const projectsDB = [
     link: 'https://daily-projects.github.io/account-settings/',
     repo: 'https://github.com/daily-projects/account-settings',
   },
+  {
+    name: 'The Menu',
+    link: 'https://daily-projects.github.io/the-menu/',
+    repo: 'https://github.com/daily-projects/the-menu',
+  },
 ];
 
 export const elements = [
