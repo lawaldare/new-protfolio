@@ -9,6 +9,15 @@ export const db = [
       'This is a app that shows the football standings of 4 popular leagues. Built with Angular 16 and implemented with Angular signals',
   },
   {
+    name: 'Crypto Assets',
+    imageURL: 'assets/images/ecabs.png',
+    stack: 'angular',
+    viewLink: 'https://crypto-assets-ecabs.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/crypto-assets-ecab',
+    desc:
+      'This is a app that shows all crypto assests built with Angular and using Ngrx for state management',
+  },
+  {
     name: 'Ecommerce',
     imageURL: 'assets/images/ecommerce.png',
     stack: 'angular',
