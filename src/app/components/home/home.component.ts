@@ -2,10 +2,10 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import Typewriter from 't-writer.js';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss'],
-    standalone: true,
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
+  standalone: true,
 })
 export class HomeComponent implements OnInit {
   @ViewChild('tw') typewriterElement;
@@ -19,8 +19,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
 
   ngAfterViewInit(): void {
-    const target = this.typewriterElement.nativeElement;
-
+    const target = this.typewriterElement.nativeElement as HTMLElement;
     const writer = new Typewriter(target, {
       typeColor: 'red',
       loop: true,
