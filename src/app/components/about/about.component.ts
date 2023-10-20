@@ -27,11 +27,18 @@ export interface ContactIcon {
 export class AboutComponent implements OnInit {
   jobs: Job[];
   contactIcons: ContactIcon[];
+  showRemainingContents: boolean = false;
+  toggleState = 'Read';
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
     this.jobs = this.projectService.getJobs();
     this.contactIcons = this.projectService.getContactIcons();
+  }
+
+  toggleContent() {
+    this.showRemainingContents = !this.showRemainingContents;
+    this.toggleState = this.showRemainingContents ? 'Hide' : 'Read';
   }
 }

@@ -5,6 +5,8 @@
 }
 
 .header {
+  font-weight: 700;
+
   span {
     rotate: (345deg);
     display: inline-block;
@@ -45,6 +47,15 @@
       background-color: var(--other-color-six);
       color: #fff;
       padding: 10px;
+    }
+  }
+
+  .text {
+    span {
+      color: #7b68ee;
+      cursor: pointer;
+      font-weight: 700;
+      text-decoration: underline;
     }
   }
 

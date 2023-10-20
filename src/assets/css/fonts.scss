@@ -1,11 +1,13 @@
 @font-face {
-  font-family: "Dank Mono";
-  src: url("../font/Dank_Mono/Dank_Mono_Regular.ttf") format("truetype");
+  font-family: "Sky Text";
+  src: url("../font/sky/sky-regular.woff") format("woff");
   font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Sky";
-  src: url("../font/sky/sky-regular.ttf") format("truetype");
+  font-family: "Sky Text";
+  src: url("../font/sky/sky-medium.woff") format("woff");
   font-style: normal;
+  font-weight: 700;
 }

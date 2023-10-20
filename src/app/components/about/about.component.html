@@ -2,37 +2,44 @@
   <div class="about card">
     <h1 class="header mb-3 "> <span class="about__text__one">About</span> Me</h1>
     <p class="text">
-      As a skilled and experienced Frontend Developer with four years of expertise in utilizing Angular, I am
+      I am skilled and experienced Frontend Developer with four years of expertise in utilizing Angular, I am
       well-versed in creating dynamic and responsive web applications. My proficiency lies in crafting elegant user
       interfaces and enhancing user experiences through the effective implementation of Angular frameworks and best
-      practices.
+      practices...<span (click)="toggleContent()">{{ toggleState }} More</span>
     </p>
-    <p class="text">
-      Throughout my career, I have consistently demonstrated a strong understanding of front-end development principles,
-      along with a keen eye for design aesthetics. I possess a deep understanding of HTML, CSS, and JavaScript, which
-      enables me to create clean and well-structured code that aligns with industry standards. My extensive experience
-      in Angular has allowed me to develop a solid foundation in building scalable and maintainable applications.
-    </p>
-    <p class="text">
-      I excel in collaborating with cross-functional teams and stakeholders to gather requirements, analyze user needs,
-      and translate them into efficient, user-friendly front-end solutions. I am adept at working in Agile environments,
-      ensuring the timely delivery of high-quality projects while maintaining effective communication and managing
-      expectations.
-    </p>
-    <p class="text">
-      In addition to my technical skills, I am passionate about staying up-to-date with the latest industry trends and
-      advancements in front-end development. This drive for continuous learning enables me to incorporate emerging
-      technologies and methodologies into my work, ensuring that I provide cutting-edge solutions.
-    </p>
-    <p class="text">
-      Overall, I am a dedicated and motivated Frontend Developer with a proven track record in leveraging Angular to
-      deliver exceptional web applications. With strong attention to detail and a passion for creating seamless user
-      experiences, I am eager to contribute my skills to a dynamic team and drive innovation in the field of front-end
-      development.
-    </p>
-    <p class="text">
-      I'm available for remote work - if you would like to build something together, <a href="tel:+447733821980">get in
-        touch?</a></p>
+    <ng-container *ngIf="showRemainingContents">
+      <p class="text">
+        Throughout my career, I have consistently demonstrated a strong understanding of front-end development
+        principles,
+        along with a keen eye for design aesthetics. I possess a deep understanding of HTML, CSS, and JavaScript, which
+        enables me to create clean and well-structured code that aligns with industry standards. My extensive experience
+        in Angular has allowed me to develop a solid foundation in building scalable and maintainable applications.
+      </p>
+      <p class="text">
+        I excel in collaborating with cross-functional teams and stakeholders to gather requirements, analyze user
+        needs,
+        and translate them into efficient, user-friendly front-end solutions. I am adept at working in Agile
+        environments,
+        ensuring the timely delivery of high-quality projects while maintaining effective communication and managing
+        expectations.
+      </p>
+      <p class="text">
+        In addition to my technical skills, I am passionate about staying up-to-date with the latest industry trends and
+        advancements in front-end development. This drive for continuous learning enables me to incorporate emerging
+        technologies and methodologies into my work, ensuring that I provide cutting-edge solutions.
+      </p>
+      <p class="text">
+        Overall, I am a dedicated and motivated Frontend Developer with a proven track record in leveraging Angular to
+        deliver exceptional web applications. With strong attention to detail and a passion for creating seamless user
+        experiences, I am eager to contribute my skills to a dynamic team and drive innovation in the field of front-end
+        development.
+      </p>
+      <p class="text">
+        I'm available for remote work - if you would like to build something together, <a href="tel:+447733821980">get
+          in
+          touch?</a></p>
+    </ng-container>
+
 
     <div class="dev-icons">
       <i class="fab fa-2x fa-html5"></i>
