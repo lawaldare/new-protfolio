@@ -124,7 +124,7 @@ export const db = [
     viewLink: 'https://youtube-trending-video.netlify.com/',
     repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
     desc:
-      'This app enable users to view the Youtube trending videos of another countries apart from their country',
+      'This app enable users to view the Youtube trending videos of another countries apart from their country. It is built with angular 16 and uses signals',
   },
   {
     name: 'Weather App',
