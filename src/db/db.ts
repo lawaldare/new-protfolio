@@ -117,15 +117,15 @@ export const db = [
   //   repoLink: 'https://github.com/lawaldare/naira-converter',
   //   desc: 'The app enable users to convert their Naira money to US Dollars, UK Pounds and Euros with a current exchange rate.'
   // },
-  {
-    name: 'YouTube Trending Videos',
-    imageURL: 'assets/images/youtube.png',
-    stack: 'angular',
-    viewLink: 'https://youtube-trending-video.netlify.com/',
-    repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
-    desc:
-      'This app enable users to view the Youtube trending videos of another countries apart from their country. It is built with angular 16 and uses signals',
-  },
+  // {
+  //   name: 'YouTube Trending Videos',
+  //   imageURL: 'assets/images/youtube.png',
+  //   stack: 'angular',
+  //   viewLink: 'https://youtube-trending-video.netlify.com/',
+  //   repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
+  //   desc:
+  //     'This app enable users to view the Youtube trending videos of another countries apart from their country. It is built with angular 16 and uses signals',
+  // },
   {
     name: 'Weather App',
     imageURL: 'assets/images/weather.png',
@@ -225,18 +225,18 @@ export const db = [
 ];
 
 export const jobs = [
-  // {
-  //   title: 'Software Engineer',
-  //   companyName: 'Betsson Group',
-  //   location: 'Ta`Xbiex, Malta',
-  //   date: 'September, 2023 - present',
-  //   themeColor: '#00b884',
-  // },
+  {
+    title: 'Frontend Engineer',
+    companyName: 'Betsson Group',
+    location: 'Ta`Xbiex, Malta',
+    date: 'July, 2023 - present',
+    themeColor: '#00b884',
+  },
   {
     title: 'Frontend Engineer',
     companyName: 'Origin Markets',
     location: 'London, United Kingdom',
-    date: 'March, 2022 - present',
+    date: 'March, 2022 - June, 2023',
     themeColor: '#7b68ee',
   },
   {
