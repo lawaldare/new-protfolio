@@ -27,6 +27,15 @@ export const db = [
       'This is a amazon-theme-like ecommerce application built with Angular and using Ngrx for state management',
   },
   {
+    name: 'YouTube Trending Videos',
+    imageURL: 'assets/images/youtube.png',
+    stack: 'angular',
+    viewLink: 'https://yt-trending.netlify.app/',
+    repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
+    desc:
+      'This app enable users to view the Youtube trending videos of another countries apart from their country. It is built with angular 16 and uses signals',
+  },
+  {
     name: 'Countries With Themes',
     imageURL: 'assets/images/countries.png',
     stack: 'angular',
@@ -117,15 +126,6 @@ export const db = [
   //   repoLink: 'https://github.com/lawaldare/naira-converter',
   //   desc: 'The app enable users to convert their Naira money to US Dollars, UK Pounds and Euros with a current exchange rate.'
   // },
-  {
-    name: 'YouTube Trending Videos',
-    imageURL: 'assets/images/youtube.png',
-    stack: 'angular',
-    viewLink: 'https://yt-trending.netlify.app/',
-    repoLink: 'https://github.com/lawaldare/youtube-trending-video-repo',
-    desc:
-      'This app enable users to view the Youtube trending videos of another countries apart from their country. It is built with angular 16 and uses signals',
-  },
   {
     name: 'Weather App',
     imageURL: 'assets/images/weather.png',
