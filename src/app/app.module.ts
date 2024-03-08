@@ -15,9 +15,10 @@ import { ReposComponent } from './components/repos/repos.component';
 import { RepoComponent } from './components/repo/repo.component';
 import { JobCardComponent } from './components/job-card/job-card.component';
 import { ContactIconComponent } from './components/contact-icon/contact-icon.component';
+import { MatchesComponent } from './components/matches/matches.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MatchesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
