@@ -16,9 +16,10 @@ import { RepoComponent } from './components/repo/repo.component';
 import { JobCardComponent } from './components/job-card/job-card.component';
 import { ContactIconComponent } from './components/contact-icon/contact-icon.component';
 import { MatchesComponent } from './components/matches/matches.component';
+import { BoxingComponent } from './components/boxing/boxing.component';
 
 @NgModule({
-  declarations: [AppComponent, MatchesComponent],
+  declarations: [AppComponent, MatchesComponent, BoxingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
