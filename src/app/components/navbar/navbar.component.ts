@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { RouterLinkActive, RouterLink } from "@angular/router";
@@ -7,10 +8,10 @@ import { RouterLinkActive, RouterLink } from "@angular/router";
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.scss"],
   standalone: true,
-  imports: [RouterLinkActive, RouterLink],
+  imports: [RouterLinkActive, RouterLink, CommonModule],
 })
 export class NavbarComponent {
-  public isMatchLive = true;
+  public isMatchLive = false;
   public isBoxingLive = false;
   constructor(private titleService: Title) {}
 
