@@ -15,8 +15,8 @@ const routes: Routes = [
   { path: "portfolio", component: PortfolioComponent },
   { path: "dailies", component: DailiesComponent },
   { path: "repos", component: ReposComponent },
-  { path: "matches", component: MatchesComponent },
-  { path: "boxing", component: BoxingComponent },
+  // { path: "matches", component: MatchesComponent },
+  // { path: "boxing", component: BoxingComponent },
   { path: "**", component: HomeComponent },
 ];
 
