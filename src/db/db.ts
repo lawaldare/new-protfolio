@@ -225,7 +225,7 @@ export const jobs = [
     themeColor: "#7b68ee",
   },
   {
-    title: "Frontend Developer",
+    title: "Frontend Engineer",
     companyName: "Code & Care",
     location: "Kharkiv, Ukraine",
     date: "September, 2021 - March, 2022",
