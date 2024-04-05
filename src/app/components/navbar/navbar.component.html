@@ -49,28 +49,6 @@
             >Repos</a
           >
         </li>
-        <ng-container *ngIf="isMatchLive">
-          <li class="nav-item">
-            <a
-              (click)="setTitle('Matches | Dare Lawal')"
-              class="nav-link"
-              routerLinkActive="router-link-active"
-              [routerLink]="['/matches']"
-              >Matches</a
-            >
-          </li>
-        </ng-container>
-        <ng-container *ngIf="isBoxingLive">
-          <li class="nav-item">
-            <a
-              (click)="setTitle('Boxing | Dare Lawal')"
-              class="nav-link"
-              routerLinkActive="router-link-active"
-              [routerLink]="['/boxing']"
-              >Boxing</a
-            >
-          </li>
-        </ng-container>
         <!-- <li class="nav-item">
           <a (click)="setTitle( 'Playground | Dare Lawal' )" class="nav-link" routerLinkActive="router-link-active"
             [routerLink]="['/playground']">Playground</a>

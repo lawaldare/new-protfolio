@@ -5,8 +5,6 @@ import { AboutComponent } from "./components/about/about.component";
 import { HomeComponent } from "./components/home/home.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { MatchesComponent } from "./components/matches/matches.component";
-import { BoxingComponent } from "./components/boxing/boxing.component";
 
 const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
@@ -15,8 +13,6 @@ const routes: Routes = [
   { path: "portfolio", component: PortfolioComponent },
   { path: "dailies", component: DailiesComponent },
   { path: "repos", component: ReposComponent },
-  // { path: "matches", component: MatchesComponent },
-  // { path: "boxing", component: BoxingComponent },
   { path: "**", component: HomeComponent },
 ];
 

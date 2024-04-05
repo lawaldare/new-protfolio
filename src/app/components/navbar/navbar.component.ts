@@ -11,8 +11,6 @@ import { RouterLinkActive, RouterLink } from "@angular/router";
   imports: [RouterLinkActive, RouterLink, CommonModule],
 })
 export class NavbarComponent {
-  public isMatchLive = false;
-  public isBoxingLive = false;
   constructor(private titleService: Title) {}
 
   public setTitle(newTitle: string) {
