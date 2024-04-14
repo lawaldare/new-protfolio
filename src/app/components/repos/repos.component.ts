@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Repo } from "../../models/repo.model";
 import { RepoComponent } from "../repo/repo.component";
 import { CommonModule } from "@angular/common";
@@ -10,7 +10,7 @@ import { CommonModule } from "@angular/common";
   standalone: true,
   imports: [CommonModule, RepoComponent],
 })
-export class ReposComponent implements OnInit {
+export class ReposComponent {
   repos: Repo[] = [
     {
       link: "https://github.com/lawaldare/Expense-Tracker-Widget-Angular-",
@@ -30,7 +30,24 @@ export class ReposComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  projects = [
+    {
+      name: "Countries",
+      link: "https://countries-graphql-rho.vercel.app/",
+      repo: "https://github.com/lawaldare/countries-graphql",
+    },
+    {
+      name: "Rick And Morty",
+      link: "https://rickandmorty-graphql-mocha.vercel.app/",
+      repo: "https://github.com/lawaldare/rickandmorty-graphql",
+    },
+  ];
 
-  ngOnInit(): void {}
+  goToProjectWebsite(str) {
+    window.open(str);
+  }
+
+  goToRepoLink(str) {
+    window.open(str);
+  }
 }

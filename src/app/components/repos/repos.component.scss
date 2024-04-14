@@ -9,3 +9,19 @@
   font-size: 1.25rem;
   text-align: justify;
 }
+
+.row {
+  margin: 0 !important;
+}
+
+.card {
+  width: 100% !important;
+
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #007bff;
+    cursor: pointer;
+  }
+}

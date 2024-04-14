@@ -1,6 +1,9 @@
 <div class="container">
   <h1 class="header">Repositories</h1>
-  <p class="text">This is where I share the repositories of some of my latest work that are not website or web app.</p>
+  <p class="text">
+    These are some of Angular elements and StencilJS projects that I did while
+    learning them.
+  </p>
 
   <ul class="list-group">
     <app-repo *ngFor="let repo of repos" [repo]="repo"></app-repo>
@@ -8,4 +11,24 @@
 
   <!-- <dl-weather-app></dl-weather-app> -->
 
+  <p class="text mt-3">
+    So I started learning GraphQL with Angular. I used Apollo Client library for
+    Angular. It's been interesting so far.
+  </p>
+
+  <div class="row">
+    <div class="card">
+      <div class="card-header">GraphQL Projects</div>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let project of projects">
+          <span (click)="goToProjectWebsite(project.link)">{{
+            project.name
+          }}</span>
+          <span (click)="goToRepoLink(project.repo)">
+            <i class="fab fa-github mr-2"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
