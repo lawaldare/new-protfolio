@@ -31,4 +31,25 @@
       </ul>
     </div>
   </div>
+
+  <p class="text mt-3">
+    So I also started learning d3.js for data visualisation. It's been
+    interesting so far.
+  </p>
+
+  <div class="row">
+    <div class="card">
+      <div class="card-header">D3js Projects</div>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let project of d3jsProjects">
+          <span (click)="goToProjectWebsite(project.link)">{{
+            project.name
+          }}</span>
+          <span (click)="goToRepoLink(project.repo)">
+            <i class="fab fa-github mr-2"></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

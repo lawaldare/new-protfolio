@@ -214,7 +214,7 @@ export const jobs = [
     title: "Frontend Engineer",
     companyName: "Betsson Group",
     location: "Ta`Xbiex, Malta",
-    date: "July, 2023 - present",
+    date: "July, 2023 - May, 2024",
     themeColor: "#00b884",
   },
   {

@@ -43,6 +43,14 @@ export class ReposComponent {
     },
   ];
 
+  d3jsProjects = [
+    {
+      name: "Revenue",
+      link: "https://lawaldare.github.io/revenue-d3js/",
+      repo: "https://github.com/lawaldare/revenue-d3js",
+    },
+  ];
+
   goToProjectWebsite(str) {
     window.open(str);
   }
