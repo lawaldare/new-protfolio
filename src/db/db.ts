@@ -211,10 +211,17 @@ export const db = [
 
 export const jobs = [
   {
+    title: "Senior Frontend Engineer",
+    companyName: "EPG Financial Services Ltd",
+    location: "Sliema, Malta",
+    date: "April, 2024 - June, 2024",
+    themeColor: "#fd71af",
+  },
+  {
     title: "Frontend Engineer",
     companyName: "Betsson Group",
     location: "Ta`Xbiex, Malta",
-    date: "July, 2023 - May, 2024",
+    date: "July, 2023 - April, 2024",
     themeColor: "#00b884",
   },
   {
