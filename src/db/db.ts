@@ -211,6 +211,13 @@ export const db = [
 
 export const jobs = [
   {
+    title: "Frontend Engineer",
+    companyName: "European Bioinformatics Institute | EMBL-EBI",
+    location: "Cambridge, United Kingdom",
+    date: "June, 2024 - Present",
+    themeColor: "#7b68ee",
+  },
+  {
     title: "Senior Frontend Engineer",
     companyName: "EPG Financial Services Ltd",
     location: "Sliema, Malta",
