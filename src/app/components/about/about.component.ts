@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, computed, inject, OnInit, signal } from "@angular/core";
 import { ProjectService } from "src/app/services/project.service";
 import { ContactIconComponent } from "../contact-icon/contact-icon.component";
 import { JobCardComponent } from "../job-card/job-card.component";
@@ -27,26 +27,22 @@ declare const window: any;
   imports: [CommonModule, JobCardComponent, ContactIconComponent],
 })
 export class AboutComponent implements OnInit {
-  jobs: Job[];
-  contactIcons: ContactIcon[];
-  showRemainingContents: boolean = false;
-  toggleState = "Read";
+  public jobs = signal<Job[]>([]);
+  public contactIcons = signal<ContactIcon[]>([]);
+  public showRemainingContents = signal(false);
 
-  supportApplePay = false;
+  private readonly projectService = inject(ProjectService);
 
-  constructor(private projectService: ProjectService) {}
+  public toggleState = computed(() =>
+    this.showRemainingContents() ? "Hide" : "Read"
+  );
 
   ngOnInit() {
-    this.jobs = this.projectService.getJobs();
-    this.contactIcons = this.projectService.getContactIcons();
-
-    if (window.ApplePaySession) {
-      this.supportApplePay = true;
-    }
+    this.jobs.update(() => this.projectService.getJobs());
+    this.contactIcons.update(() => this.projectService.getContactIcons());
   }
 
   toggleContent() {
-    this.showRemainingContents = !this.showRemainingContents;
-    this.toggleState = this.showRemainingContents ? "Hide" : "Read";
+    this.showRemainingContents.update((value) => !value);
   }
 }
