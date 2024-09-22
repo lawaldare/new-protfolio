@@ -1,8 +1,8 @@
-import { contactIcons, db, jobs } from './../../db/db';
-import { Injectable } from '@angular/core';
+import { contactIcons, db, jobs } from "../../db/db";
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ProjectService {
   constructor() {}
