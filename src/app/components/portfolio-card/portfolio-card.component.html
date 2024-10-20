@@ -1,14 +1,28 @@
-<div class="card" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+<div
+  class="card"
+  data-aos="fade-up"
+  data-aos-duration="500"
+  data-aos-easing="ease-in-sine"
+>
   <div class="card__side card__side--front card__side--front">
-    <h3 class="card__title">{{portfolio.name}}</h3>
-    <img [src]='portfolio.imageURL' alt="card__image" class="card__image">
-    <p class="card__desc">{{portfolio.desc}}</p>
+    <h3 class="card__title">{{ portfolio.name }}</h3>
+    <img [src]="portfolio().imageURL" alt="card__image" class="card__image" />
+    <p class="card__desc">{{ portfolio().desc }}</p>
   </div>
   <div class="card__side card__side--back card__side--back">
     <div class="card__links">
-      <a [href]="portfolio.viewLink" target="_blank" class="btn__link btn__link--portfolio">view</a>
-      <a [href]="portfolio.repoLink" target="_blank" class="btn__link btn__link--download">github</a>
+      <a
+        [href]="portfolio().viewLink"
+        target="_blank"
+        class="btn__link btn__link--portfolio"
+        >view</a
+      >
+      <a
+        [href]="portfolio().repoLink"
+        target="_blank"
+        class="btn__link btn__link--download"
+        >github</a
+      >
     </div>
-
   </div>
 </div>

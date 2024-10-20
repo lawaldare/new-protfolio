@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  Input,
-  OnInit,
-} from "@angular/core";
+import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 import { Repo } from "src/app/models/repo.model";
 
 @Component({
@@ -13,10 +8,6 @@ import { Repo } from "src/app/models/repo.model";
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RepoComponent implements OnInit {
-  @Input() repo: Repo;
-
-  constructor() {}
-
-  ngOnInit(): void {}
+export class RepoComponent {
+  public readonly repo = input.required<Repo>();
 }

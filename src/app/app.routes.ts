@@ -1,13 +1,12 @@
-import { ReposComponent } from "./components/repos/repos.component";
-import { DailiesComponent } from "./components/dailies/dailies.component";
-import { PortfolioComponent } from "./components/portfolio/portfolio.component";
+import { Routes } from "@angular/router";
 import { AboutComponent } from "./components/about/about.component";
+import { DailiesComponent } from "./components/dailies/dailies.component";
 import { HomeComponent } from "./components/home/home.component";
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
 import { LiveComponent } from "./components/live/live.component";
+import { PortfolioComponent } from "./components/portfolio/portfolio.component";
+import { ReposComponent } from "./components/repos/repos.component";
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: "", pathMatch: "full", redirectTo: "home" },
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
@@ -17,9 +16,3 @@ const routes: Routes = [
   { path: "live", component: LiveComponent },
   { path: "**", component: HomeComponent },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}

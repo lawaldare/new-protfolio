@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, signal } from "@angular/core";
 import { Repo } from "../../models/repo.model";
 import { RepoComponent } from "../repo/repo.component";
 import { CommonModule } from "@angular/common";
@@ -11,7 +11,7 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule, RepoComponent],
 })
 export class ReposComponent {
-  repos: Repo[] = [
+  public readonly repos = signal<Repo[]>([
     {
       link: "https://github.com/lawaldare/Expense-Tracker-Widget-Angular-",
       name: "Expense Tracker (Angular Element)",
@@ -28,9 +28,9 @@ export class ReposComponent {
       link: "https://github.com/lawaldare/cc-widget",
       name: "Credit Card (Angular Element)",
     },
-  ];
+  ]);
 
-  projects = [
+  public readonly projects = signal([
     {
       name: "Countries",
       link: "https://countries-graphql-rho.vercel.app/",
@@ -41,21 +41,13 @@ export class ReposComponent {
       link: "https://rickandmorty-graphql-mocha.vercel.app/",
       repo: "https://github.com/lawaldare/rickandmorty-graphql",
     },
-  ];
+  ]);
 
-  d3jsProjects = [
-    {
-      name: "Revenue",
-      link: "https://lawaldare.github.io/revenue-d3js/",
-      repo: "https://github.com/lawaldare/revenue-d3js",
-    },
-  ];
-
-  goToProjectWebsite(str) {
+  public goToProjectWebsite(str) {
     window.open(str);
   }
 
-  goToRepoLink(str) {
+  public goToRepoLink(str) {
     window.open(str);
   }
 }

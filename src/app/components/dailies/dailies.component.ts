@@ -1,6 +1,6 @@
 import { elements, projectsDB } from "../../../db/dailies";
 import { DailyProject } from "./../../models/dailyProject.model";
-import { Component } from "@angular/core";
+import { Component, signal } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -11,8 +11,8 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule],
 })
 export class DailiesComponent {
-  projects: DailyProject[] = projectsDB;
-  elements: DailyProject[] = elements;
+  public projects = signal<DailyProject[]>(projectsDB);
+  public elements = signal<DailyProject[]>(elements);
 
   goToProjectWebsite(str) {
     if (window.innerWidth > 1400) {

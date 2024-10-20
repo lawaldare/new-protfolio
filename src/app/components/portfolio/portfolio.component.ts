@@ -1,7 +1,6 @@
 import { ProjectService } from "./../../services/project.service";
-import { db } from "../../../db/db";
 import { Project } from "./../../project.model";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, signal } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { PortfolioCardComponent } from "../portfolio-card/portfolio-card.component";
 import { CommonModule } from "@angular/common";
@@ -17,8 +16,8 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule, PortfolioCardComponent],
 })
 export class PortfolioComponent implements OnInit {
-  projects: Project[];
-  projectFiltered: Project[];
+  public projects = signal<Project[]>([]);
+  public projectFiltered = signal<Project[]>([]);
 
   constructor(
     private projectService: ProjectService,
@@ -28,31 +27,35 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     this.getProjects();
 
-    this.projectFiltered = this.projects;
-
     this.titleService.setTitle("Portfolio | Dare Lawal");
   }
 
   getProjects() {
-    this.projects = this.projectService.getProjects();
-    this.projectFiltered = this.projects;
+    this.projects.update(() => this.projectService.getProjects());
+    this.projectFiltered.update(() => this.projects());
   }
 
   js(): void {
-    this.projectFiltered = this.projects.filter(
-      (p) => p.stack === "javascript"
+    this.projectFiltered.update(() =>
+      this.projects().filter((p) => p.stack === "javascript")
     );
   }
 
   angular(): void {
-    this.projectFiltered = this.projects.filter((p) => p.stack === "angular");
+    this.projectFiltered.update(() =>
+      this.projects().filter((p) => p.stack === "angular")
+    );
   }
 
   wordpress(): void {
-    this.projectFiltered = this.projects.filter((p) => p.stack === "wordpress");
+    this.projectFiltered.update(() =>
+      this.projects().filter((p) => p.stack === "wordpress")
+    );
   }
 
   animation(): void {
-    this.projectFiltered = this.projects.filter((p) => p.stack === "animation");
+    this.projectFiltered.update(() =>
+      this.projects().filter((p) => p.stack === "animation")
+    );
   }
 }

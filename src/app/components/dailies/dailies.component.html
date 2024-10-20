@@ -1,11 +1,12 @@
 <div class="container">
   <h1 class="header">Welcome to my dailies</h1>
-  <p class="text">This is where I share projects on daily basis to improve my frontend skills. Currently am doing a
-    daily
-    project of markups (HTML and CSS) and elements (HTML, CSS and JavaScript) on <a href="https://frontloops.io/"
-      target="_blank">FrontLoop</a> and I would love
-    to
-    be sharing them on my website. </p>
+  <p class="text">
+    This is where I share projects on daily basis to improve my frontend skills.
+    Currently am doing a daily project of markups (HTML and CSS) and elements
+    (HTML, CSS and JavaScript) on
+    <a href="https://frontloops.io/" target="_blank">FrontLoop</a> and I would
+    love to be sharing them on my website.
+  </p>
 
   <div class="row">
     <div class="col-md-6">
@@ -14,8 +15,10 @@
           FrontLoop Markups <span>(DESKTOP VIEW ONLY)</span>
         </div>
         <ul class="list-group">
-          <li class="list-group-item" *ngFor="let project of projects">
-            <span (click)="goToProjectWebsite(project.link)">{{project.name}}</span>
+          <li class="list-group-item" *ngFor="let project of projects()">
+            <span (click)="goToProjectWebsite(project.link)">{{
+              project.name
+            }}</span>
             <span (click)="goToRepoLink(project.repo)">
               <i class="fab fa-github mr-2"></i>
             </span>
@@ -25,12 +28,10 @@
     </div>
     <div class="col-md-6 mt-sm-4 mt-md-0">
       <div class="card">
-        <div class="card-header">
-          FrontLoop Elements
-        </div>
+        <div class="card-header">FrontLoop Elements</div>
         <ul class="list-group">
-          <li class="list-group-item" *ngFor="let project of elements">
-            <span (click)="goToElement(project.link)">{{project.name}}</span>
+          <li class="list-group-item" *ngFor="let project of elements()">
+            <span (click)="goToElement(project.link)">{{ project.name }}</span>
             <span (click)="goToRepoLink(project.repo)">
               <i class="fab fa-github mr-2"></i>
             </span>
@@ -39,5 +40,4 @@
       </div>
     </div>
   </div>
-
 </div>
