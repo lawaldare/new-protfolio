@@ -34,6 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 
   span {
     text-transform: uppercase;
@@ -41,5 +42,4 @@
     text-decoration: underline;
     color: blue;
   }
-  cursor: pointer;
 }
