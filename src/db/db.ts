@@ -267,13 +267,6 @@ export const jobs = [
     themeColor: "#ffc800",
   },
   {
-    title: "WordPress Developer",
-    companyName: "Midland Digital Solutions",
-    location: "Lagos, Nigeria",
-    date: "August, 2020 - December, 2020",
-    themeColor: "#00b884",
-  },
-  {
     title: "Frontend Engineer",
     companyName: "Terragon Group",
     location: "Lagos, Nigeria",
