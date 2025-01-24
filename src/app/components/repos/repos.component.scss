@@ -2,7 +2,7 @@
   font-size: 2rem;
   margin-top: 50px;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .text {
@@ -16,6 +16,10 @@
 
 .card {
   width: 100% !important;
+
+  &-header {
+    font-weight: 500;
+  }
 
   .list-group-item {
     display: flex;

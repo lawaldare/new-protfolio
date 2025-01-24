@@ -1,18 +1,47 @@
 import { Routes } from "@angular/router";
-import { AboutComponent } from "./components/about/about.component";
-import { DailiesComponent } from "./components/dailies/dailies.component";
-import { HomeComponent } from "./components/home/home.component";
-import { LiveComponent } from "./components/live/live.component";
-import { PortfolioComponent } from "./components/portfolio/portfolio.component";
-import { ReposComponent } from "./components/repos/repos.component";
 
 export const routes: Routes = [
-  { path: "", pathMatch: "full", redirectTo: "home" },
-  { path: "home", component: HomeComponent },
-  { path: "about", component: AboutComponent },
-  { path: "portfolio", component: PortfolioComponent },
-  { path: "dailies", component: DailiesComponent },
-  { path: "repos", component: ReposComponent },
-  { path: "live", component: LiveComponent },
-  { path: "**", component: HomeComponent },
+  {
+    path: "",
+    loadComponent: () =>
+      import("./components/home/home.component").then((m) => m.HomeComponent),
+  },
+  {
+    path: "about",
+    loadComponent: () =>
+      import("./components/about/about.component").then(
+        (m) => m.AboutComponent
+      ),
+  },
+  {
+    path: "projects",
+    loadComponent: () =>
+      import("./components/portfolio/portfolio.component").then(
+        (m) => m.PortfolioComponent
+      ),
+  },
+  {
+    path: "repos",
+    loadComponent: () =>
+      import("./components/repos/repos.component").then(
+        (m) => m.ReposComponent
+      ),
+  },
+  {
+    path: "dailies",
+    loadComponent: () =>
+      import("./components/dailies/dailies.component").then(
+        (m) => m.DailiesComponent
+      ),
+  },
+  {
+    path: "live",
+    loadComponent: () =>
+      import("./components/live/live.component").then((m) => m.LiveComponent),
+  },
+  {
+    path: "**",
+    loadComponent: () =>
+      import("./components/home/home.component").then((m) => m.HomeComponent),
+  },
 ];

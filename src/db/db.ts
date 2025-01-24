@@ -123,7 +123,7 @@ export const db = [
     name: "Weather App",
     imageURL: "assets/images/weather.png",
     stack: "angular",
-    viewLink: "https://da-weather.netlify.com/",
+    viewLink: "https://weather-sigma-inky.vercel.app/",
     repoLink: "https://github.com/lawaldare/weather",
     desc: "This app enable users to see the current weather of any city in the world",
   },
