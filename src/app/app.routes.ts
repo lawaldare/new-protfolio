@@ -40,6 +40,11 @@ export const routes: Routes = [
       import("./components/live/live.component").then((m) => m.LiveComponent),
   },
   {
+    path: "chat",
+    loadComponent: () =>
+      import("./components/chat/chat.component").then((m) => m.ChatComponent),
+  },
+  {
     path: "**",
     loadComponent: () =>
       import("./components/home/home.component").then((m) => m.HomeComponent),

@@ -1,0 +1,22 @@
+.container {
+  border: 1px solid red;
+  min-height: calc(100vh - 77px);
+  display: grid;
+  place-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  textarea {
+    margin-bottom: 50px;
+  }
+
+  .response {
+    min-height: 400px;
+    border: 1px solid gray;
+    margin-top: 50px;
+  }
+}
