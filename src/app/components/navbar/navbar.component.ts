@@ -4,11 +4,10 @@ import { Title } from "@angular/platform-browser";
 import { RouterLinkActive, RouterLink } from "@angular/router";
 
 @Component({
-  selector: "app-navbar",
-  templateUrl: "./navbar.component.html",
-  styleUrls: ["./navbar.component.scss"],
-  standalone: true,
-  imports: [RouterLinkActive, RouterLink, CommonModule],
+    selector: "app-navbar",
+    templateUrl: "./navbar.component.html",
+    styleUrls: ["./navbar.component.scss"],
+    imports: [RouterLinkActive, RouterLink, CommonModule]
 })
 export class NavbarComponent {
   constructor(private titleService: Title) {}

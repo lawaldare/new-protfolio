@@ -6,14 +6,13 @@ import { PortfolioCardComponent } from "../portfolio-card/portfolio-card.compone
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-portfolio",
-  templateUrl: "./portfolio.component.html",
-  styleUrls: [
-    "./portfolio.component.scss",
-    "../portfolio-card/portfolio-card.component.scss",
-  ],
-  standalone: true,
-  imports: [CommonModule, PortfolioCardComponent],
+    selector: "app-portfolio",
+    templateUrl: "./portfolio.component.html",
+    styleUrls: [
+        "./portfolio.component.scss",
+        "../portfolio-card/portfolio-card.component.scss",
+    ],
+    imports: [CommonModule, PortfolioCardComponent]
 })
 export class PortfolioComponent implements OnInit {
   public projects = signal<Project[]>([]);

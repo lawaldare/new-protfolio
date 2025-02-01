@@ -4,11 +4,10 @@ import { RepoComponent } from "../repo/repo.component";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-repos",
-  templateUrl: "./repos.component.html",
-  styleUrls: ["./repos.component.scss"],
-  standalone: true,
-  imports: [CommonModule, RepoComponent],
+    selector: "app-repos",
+    templateUrl: "./repos.component.html",
+    styleUrls: ["./repos.component.scss"],
+    imports: [CommonModule, RepoComponent]
 })
 export class ReposComponent {
   public readonly repos = signal<Repo[]>([

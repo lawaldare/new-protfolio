@@ -4,11 +4,10 @@ import { Component, signal } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
-  selector: "app-dailies",
-  templateUrl: "./dailies.component.html",
-  styleUrls: ["./dailies.component.scss"],
-  standalone: true,
-  imports: [CommonModule],
+    selector: "app-dailies",
+    templateUrl: "./dailies.component.html",
+    styleUrls: ["./dailies.component.scss"],
+    imports: [CommonModule]
 })
 export class DailiesComponent {
   public projects = signal<DailyProject[]>(projectsDB);

@@ -6,8 +6,8 @@ import { NgStyle } from "@angular/common";
   selector: "app-job-card",
   templateUrl: "./job-card.component.html",
   styleUrls: ["./job-card.component.scss"],
-  standalone: true,
   imports: [NgStyle],
+  standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class JobCardComponent {

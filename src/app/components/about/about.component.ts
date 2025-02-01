@@ -23,8 +23,8 @@ declare const window: any;
   selector: "app-about",
   templateUrl: "./about.component.html",
   styleUrls: ["./about.component.scss"],
-  standalone: true,
   imports: [CommonModule, JobCardComponent, ContactIconComponent],
+  standalone: true,
 })
 export class AboutComponent implements OnInit {
   public jobs = signal<Job[]>([]);

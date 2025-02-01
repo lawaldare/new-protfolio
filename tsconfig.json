@@ -13,8 +13,7 @@
     "target": "ES2022",
     "typeRoots": ["node_modules/@types"],
     "lib": ["ES2022", "DOM"],
-    "useDefineForClassFields": false,
-    "types": ["node"]
+    "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

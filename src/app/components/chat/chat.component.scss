@@ -1,8 +1,8 @@
 .container {
-  border: 1px solid red;
   min-height: calc(100vh - 77px);
   display: grid;
   place-items: center;
+  padding: 20px 0;
 }
 
 section {
@@ -11,12 +11,24 @@ section {
   width: 80%;
 
   textarea {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  button {
+    width: 100px;
+    border: none;
+    background-color: var(--other-color-one);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
   }
 
   .response {
-    min-height: 400px;
+    height: 500px;
     border: 1px solid gray;
     margin-top: 50px;
+    overflow-y: scroll;
   }
 }

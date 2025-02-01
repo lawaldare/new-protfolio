@@ -10,8 +10,7 @@ declare var gtag;
     selector: "app-root",
     templateUrl: "./app.component.html",
     styleUrls: ["./app.component.scss"],
-    standalone: true,
-    imports: [NavbarComponent, RouterOutlet],
+    imports: [NavbarComponent, RouterOutlet]
 })
 export class AppComponent implements OnInit {
   title = "portfolio";
