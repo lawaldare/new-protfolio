@@ -2,6 +2,7 @@ import { CommonModule } from "@angular/common";
 import { Component, ElementRef, ViewChild } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import ollama from "ollama";
+import { marked } from "marked";
 
 @Component({
   selector: "app-chat",
@@ -14,6 +15,7 @@ export class ChatComponent {
   @ViewChild("response", { read: ElementRef }) response: ElementRef;
 
   public prompt = "";
+  public promptAsked = "";
 
   public async ask() {
     // console.log(this.prompt);
@@ -25,9 +27,12 @@ export class ChatComponent {
         messages: [{ role: "user", content: this.prompt }],
         stream: true,
       });
+      this.promptAsked = this.prompt;
+      this.prompt = "";
+
       for await (const part of streamResponse) {
         responseText += part.message.content;
-        this.response.nativeElement.innerHTML = responseText;
+        this.response.nativeElement.innerHTML = marked(responseText);
       }
     } catch (error) {}
   }

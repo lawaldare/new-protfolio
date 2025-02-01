@@ -6,6 +6,9 @@
       [(ngModel)]="prompt"
     ></textarea>
     <button (click)="ask()">Ask</button>
+    @if(promptAsked.length){
+    <p class="prompt">{{ promptAsked }}</p>
+    }
     <div class="response" #response></div>
   </section>
 </div>
