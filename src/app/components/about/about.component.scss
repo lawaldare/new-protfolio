@@ -98,7 +98,8 @@
 
   .rxjs,
   .ngrx,
-  .graphql {
+  .graphql,
+  .nx {
     height: 30px;
     width: 30px;
     transition: all 0.5s;
@@ -109,7 +110,8 @@
   }
 
   .rxjs,
-  .ngrx {
+  .ngrx,
+  .graphql {
     margin-right: 40px;
   }
 }
