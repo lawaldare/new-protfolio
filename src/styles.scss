@@ -1,5 +1,6 @@
 //import font
 @import "./assets/css/fonts.scss";
+@import "./assets/css/atlassian-fonts.scss";
 
 :root {
   --header-text-color: #292d34;
@@ -32,7 +33,8 @@
 }
 
 *:not(i) {
-  font-family: "Poppins", serif;
+  font-family: "Atlassian Mono", ui-monospace, Menlo, "Segoe UI Mono",
+    "Ubuntu Mono", monospace;
   font-style: normal;
   padding: 0;
   margin: 0;
