@@ -250,6 +250,13 @@ export const jobs = [
     themeColor: "#7b68ee",
   },
   {
+    title: "Frontend Engineer",
+    companyName: "Mida Technologies",
+    location: "Delaware, United States",
+    date: "June, 2025 - September, 2025",
+    themeColor: "#49ccf9",
+  },
+  {
     title: "Senior Frontend Engineer",
     companyName: "EPG Financial Services Ltd",
     location: "Sliema, Malta",
