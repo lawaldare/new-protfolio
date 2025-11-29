@@ -19,8 +19,8 @@ export const db = [
     name: "Infinite Scroll Gallery",
     imageURL: "assets/images/isga.png",
     stack: "angular",
-    viewLink: "https://thiings-co.vercel.app/",
-    repoLink: "https://github.com/lawaldare/thiings.co",
+    viewLink: "https://infinite-scroll-gallery-jet.vercel.app/",
+    repoLink: "https://github.com/lawaldare/infinite-scroll-gallery",
     desc: "This is an infinite scroll gallery app built with Angular 20 and using signals",
   },
   {
