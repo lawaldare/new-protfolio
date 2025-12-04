@@ -1,4 +1,4 @@
-import { CommonModule } from "@angular/common";
+
 import { Component } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { RouterLinkActive, RouterLink, RouterModule } from "@angular/router";
@@ -7,7 +7,7 @@ import { RouterLinkActive, RouterLink, RouterModule } from "@angular/router";
   selector: "app-navbar",
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.scss"],
-  imports: [RouterLinkActive, RouterLink, CommonModule, RouterModule],
+  imports: [RouterLinkActive, RouterLink, RouterModule],
   standalone: true,
 })
 export class NavbarComponent {

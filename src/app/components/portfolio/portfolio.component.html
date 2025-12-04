@@ -16,11 +16,12 @@
   </div>
 
   <div class="projects-container">
-    <app-portfolio-card
-      *ngFor="let project of projectFiltered()"
-      [portfolio]="project"
-      class="project"
-    >
-    </app-portfolio-card>
+    @for (project of projectFiltered(); track project) {
+      <app-portfolio-card
+        [portfolio]="project"
+        class="project"
+        >
+      </app-portfolio-card>
+    }
   </div>
 </div>

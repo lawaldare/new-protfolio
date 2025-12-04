@@ -7,10 +7,10 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 declare var gtag;
 
 @Component({
-    selector: "app-root",
-    templateUrl: "./app.component.html",
-    styleUrls: ["./app.component.scss"],
-    imports: [NavbarComponent, RouterOutlet]
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
+  imports: [NavbarComponent, RouterOutlet],
 })
 export class AppComponent implements OnInit {
   title = "portfolio";

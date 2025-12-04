@@ -1,13 +1,13 @@
 import { elements, projectsDB } from "../../../db/dailies";
 import { DailyProject } from "./../../models/dailyProject.model";
 import { Component, signal } from "@angular/core";
-import { CommonModule } from "@angular/common";
+
 
 @Component({
     selector: "app-dailies",
     templateUrl: "./dailies.component.html",
     styleUrls: ["./dailies.component.scss"],
-    imports: [CommonModule]
+    imports: []
 })
 export class DailiesComponent {
   public projects = signal<DailyProject[]>(projectsDB);

@@ -6,7 +6,9 @@
   </p>
 
   <ul class="list-group">
-    <app-repo *ngFor="let repo of repos()" [repo]="repo"></app-repo>
+    @for (repo of repos(); track repo) {
+      <app-repo [repo]="repo"></app-repo>
+    }
   </ul>
 
   <p class="text mt-3">
@@ -18,14 +20,16 @@
     <div class="card">
       <div class="card-header">GraphQL Projects</div>
       <ul class="list-group">
-        <li class="list-group-item" *ngFor="let project of projects()">
-          <span (click)="goToProjectWebsite(project.link)">{{
-            project.name
-          }}</span>
-          <span (click)="goToRepoLink(project.repo)">
-            <i class="fab fa-github mr-2"></i>
-          </span>
-        </li>
+        @for (project of projects(); track project) {
+          <li class="list-group-item">
+            <span (click)="goToProjectWebsite(project.link)">{{
+              project.name
+            }}</span>
+            <span (click)="goToRepoLink(project.repo)">
+              <i class="fab fa-github mr-2"></i>
+            </span>
+          </li>
+        }
       </ul>
     </div>
   </div>

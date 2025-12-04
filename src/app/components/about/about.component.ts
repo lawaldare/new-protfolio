@@ -2,7 +2,7 @@ import { Component, computed, inject, OnInit, signal } from "@angular/core";
 import { ProjectService } from "src/app/services/project.service";
 import { ContactIconComponent } from "../contact-icon/contact-icon.component";
 import { JobCardComponent } from "../job-card/job-card.component";
-import { CommonModule } from "@angular/common";
+
 
 export interface Job {
   title: string;
@@ -23,7 +23,7 @@ declare const window: any;
   selector: "app-about",
   templateUrl: "./about.component.html",
   styleUrls: ["./about.component.scss"],
-  imports: [CommonModule, JobCardComponent, ContactIconComponent],
+  imports: [JobCardComponent, ContactIconComponent],
   standalone: true,
 })
 export class AboutComponent implements OnInit {

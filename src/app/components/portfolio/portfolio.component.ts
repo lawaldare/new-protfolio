@@ -3,7 +3,7 @@ import { Project } from "./../../project.model";
 import { Component, OnInit, signal } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { PortfolioCardComponent } from "../portfolio-card/portfolio-card.component";
-import { CommonModule } from "@angular/common";
+
 
 @Component({
     selector: "app-portfolio",
@@ -12,7 +12,7 @@ import { CommonModule } from "@angular/common";
         "./portfolio.component.scss",
         "../portfolio-card/portfolio-card.component.scss",
     ],
-    imports: [CommonModule, PortfolioCardComponent]
+    imports: [PortfolioCardComponent]
 })
 export class PortfolioComponent implements OnInit {
   public projects = signal<Project[]>([]);

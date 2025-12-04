@@ -1,12 +1,12 @@
 export const db = [
-  // {
-  //   name: "Football Standings",
-  //   imageURL: "assets/images/football-standings.png",
-  //   stack: "angular",
-  //   viewLink: "https://football-standingss.netlify.app/",
-  //   repoLink: "https://github.com/lawaldare/football-standing",
-  //   desc: "This is a app that shows the football standings of 4 popular leagues. Built with Angular 16 and implemented with Angular signals",
-  // },
+  {
+    name: "Postcode Lookup",
+    imageURL: "assets/images/postcode.png",
+    stack: "angular",
+    viewLink: "https://host-app-theta.vercel.app/",
+    repoLink: "https://github.com/lawaldare/host-app",
+    desc: "This is a postcode lookup app built with Angular that allows users to search for UK addresses using postcodes.",
+  },
   // {
   //   name: "Crypto Assets",
   //   imageURL: "assets/images/ecabs.png",

@@ -15,14 +15,16 @@
           FrontLoop Markups <span>(DESKTOP VIEW ONLY)</span>
         </div>
         <ul class="list-group">
-          <li class="list-group-item" *ngFor="let project of projects()">
-            <span (click)="goToProjectWebsite(project.link)">{{
-              project.name
-            }}</span>
-            <span (click)="goToRepoLink(project.repo)">
-              <i class="fab fa-github mr-2"></i>
-            </span>
-          </li>
+          @for (project of projects(); track project) {
+            <li class="list-group-item">
+              <span (click)="goToProjectWebsite(project.link)">{{
+                project.name
+              }}</span>
+              <span (click)="goToRepoLink(project.repo)">
+                <i class="fab fa-github mr-2"></i>
+              </span>
+            </li>
+          }
         </ul>
       </div>
     </div>
@@ -30,12 +32,14 @@
       <div class="card">
         <div class="card-header">FrontLoop Elements</div>
         <ul class="list-group">
-          <li class="list-group-item" *ngFor="let project of elements()">
-            <span (click)="goToElement(project.link)">{{ project.name }}</span>
-            <span (click)="goToRepoLink(project.repo)">
-              <i class="fab fa-github mr-2"></i>
-            </span>
-          </li>
+          @for (project of elements(); track project) {
+            <li class="list-group-item">
+              <span (click)="goToElement(project.link)">{{ project.name }}</span>
+              <span (click)="goToRepoLink(project.repo)">
+                <i class="fab fa-github mr-2"></i>
+              </span>
+            </li>
+          }
         </ul>
       </div>
     </div>
