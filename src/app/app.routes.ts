@@ -35,11 +35,6 @@ export const routes: Routes = [
       ),
   },
   {
-    path: "live",
-    loadComponent: () =>
-      import("./components/live/live.component").then((m) => m.LiveComponent),
-  },
-  {
     path: "**",
     loadComponent: () =>
       import("./components/home/home.component").then((m) => m.HomeComponent),
