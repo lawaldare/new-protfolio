@@ -96,6 +96,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   .fab {
     margin-right: 40px;
@@ -131,6 +132,7 @@
 .contact-icons {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 425px) {
