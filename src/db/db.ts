@@ -351,3 +351,20 @@ export const contactIcons = [
     icon: "fab fa-instagram",
   },
 ];
+
+export const papers = [
+  {
+    title:
+      "PDBe-KB Complexes: Enabling Functional Insight from Macromolecular Complexes in the PDB",
+    link: "https://ssrn.com/abstract=5688656",
+  },
+  {
+    title: "PDBe: enhanced structural data exploration to facilitate discovery",
+    link: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaf1120/8376690",
+  },
+  {
+    title:
+      "AlphaFold Protein Structure Database 2025: a redesigned interface and updated structural coverage",
+    link: "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaf1226/8340156",
+  },
+];

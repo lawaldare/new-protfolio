@@ -2,7 +2,7 @@ import { Component, computed, inject, OnInit, signal } from "@angular/core";
 import { ProjectService } from "src/app/services/project.service";
 import { ContactIconComponent } from "../contact-icon/contact-icon.component";
 import { JobCardComponent } from "../job-card/job-card.component";
-
+import { papers } from "src/db/db";
 
 export interface Job {
   title: string;
@@ -30,6 +30,7 @@ export class AboutComponent implements OnInit {
   public jobs = signal<Job[]>([]);
   public contactIcons = signal<ContactIcon[]>([]);
   public showRemainingContents = signal(false);
+  public papers = signal<{ title: string; link: string }[]>(papers);
 
   private readonly projectService = inject(ProjectService);
 

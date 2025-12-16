@@ -80,48 +80,21 @@
 
   <div class="card p-0 py-5">
     <h1 class="header mb-3">
-      <span class="about__text__four">Publication</span>
+      <span class="about__text__four">Publications</span>
     </h1>
     <article>
-      <h3>
-        PDBe-KB Complexes: Enabling Functional Insight from Macromolecular
-        Complexes in the PDB
-      </h3>
-
-      <p>
-        Sri Devan Appasamy, Sreenath Nair, <strong>Dare Kayode Lawal</strong>,
-        Ivanna Pidruchna, Adam Midlik, et al.<br />
-        <em>Preprint, SSRN — October 2025</em>
-      </p>
-
-      <p>
-        This publication presents <strong>PDBe-KB Complexes</strong>, an
-        archive-wide system that aggregates experimentally determined
-        macromolecular assemblies from the Protein Data Bank into stable,
-        complex-level records. The framework integrates composition,
-        stoichiometry, symmetry, ligands, PISA-derived properties, and
-        hierarchical sub-/supercomplex relationships, enabling large-scale
-        comparative and functional analysis across more than
-        <strong>99,000 unique complexes</strong>.
-      </p>
-
-      <p>
-        <a
-          href="https://ssrn.com/abstract=5688656"
-          target="_blank"
-          rel="noopener"
-        >
-          Read preprint on SSRN
-        </a>
-        ·
-        <a
-          href="https://www.ebi.ac.uk/pdbe/pdbe-kb/complexes/PDB-CPX-154652"
-          target="_blank"
-          rel="noopener"
-        >
-          PDBe-KB Complexes resource
-        </a>
-      </p>
+      <div class="row">
+        <div class="card">
+          <div class="card-header">Published Journals and Research Papers</div>
+          <ul class="list-group">
+            @for (paper of papers(); track paper.title) {
+            <li class="list-group-item">
+              <a [href]="paper.link" target="_blank">{{ paper.title }}</a>
+            </li>
+            }
+          </ul>
+        </div>
+      </div>
     </article>
   </div>
 
