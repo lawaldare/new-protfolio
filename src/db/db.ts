@@ -203,7 +203,7 @@ export const db = [
     name: "Bitcoin Calculator",
     imageURL: "assets/images/bitcoin.png",
     stack: "angular",
-    viewLink: "https://bitcoin-calculator.netlify.app/",
+    viewLink: "https://bitcoin-angular.vercel.app/",
     repoLink: "https://github.com/lawaldare/bitcoin-angular",
     desc: "This app enable users dealing with bitcoin to know their current status, either they are making profit or they are not.",
   },
