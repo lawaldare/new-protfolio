@@ -59,7 +59,7 @@ export const db = [
     name: "YouTube Trending Videos",
     imageURL: "assets/images/youtube.png",
     stack: "angular",
-    viewLink: "https://yt-trending.netlify.app/",
+    viewLink: "https://youtube-trending-video-repo.vercel.app/",
     repoLink: "https://github.com/lawaldare/youtube-trending-video-repo",
     desc: "This app enable users to view the Youtube trending videos of another countries apart from their country. It is built with angular 16 and uses signals",
   },
