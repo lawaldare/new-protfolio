@@ -7,14 +7,14 @@ export const db = [
     repoLink: "https://github.com/lawaldare/host-app",
     desc: "This is a postcode lookup app built with Angular that allows users to search for UK addresses using postcodes.",
   },
-  // {
-  //   name: "Crypto Assets",
-  //   imageURL: "assets/images/ecabs.png",
-  //   stack: "angular",
-  //   viewLink: "https://crypto-assets-ecabs.netlify.app/",
-  //   repoLink: "https://github.com/lawaldare/crypto-assets-ecab",
-  //   desc: "This is a app that shows all crypto assests built with Angular and using Ngrx for state management",
-  // },
+  {
+    name: "Crypto Assets",
+    imageURL: "assets/images/ecabs.png",
+    stack: "angular",
+    viewLink: "https://crypto-assets-ecab.vercel.app/",
+    repoLink: "https://github.com/lawaldare/crypto-assets-ecab",
+    desc: "This is a app that shows all crypto assests built with Angular and using Ngrx for state management",
+  },
   {
     name: "Infinite Scroll Gallery",
     imageURL: "assets/images/isga.png",
