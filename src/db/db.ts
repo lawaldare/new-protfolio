@@ -187,7 +187,7 @@ export const db = [
     name: "Data Info",
     imageURL: "assets/images/data-info.png",
     stack: "angular",
-    viewLink: "https://data-info-2022.web.app/",
+    viewLink: "https://data-info-blush.vercel.app/",
     repoLink: "https://github.com/lawaldare/data-info",
     desc: "This is a project that make use of jsonplaceholder data and display them with filtering and pagination functionality",
   },
