@@ -1,15 +1,19 @@
-import { Component, signal } from "@angular/core";
+import { Component, Inject, PLATFORM_ID, signal } from "@angular/core";
 import { Repo } from "../../models/repo.model";
 import { RepoComponent } from "../repo/repo.component";
-
+import { isPlatformBrowser } from "@angular/common";
 
 @Component({
-    selector: "app-repos",
-    templateUrl: "./repos.component.html",
-    styleUrls: ["./repos.component.scss"],
-    imports: [RepoComponent]
+  selector: "app-repos",
+  templateUrl: "./repos.component.html",
+  styleUrls: ["./repos.component.scss"],
+  imports: [RepoComponent],
 })
 export class ReposComponent {
+  private isBrowser: boolean;
+  constructor(@Inject(PLATFORM_ID) platformId: object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
   public readonly repos = signal<Repo[]>([
     {
       link: "https://github.com/lawaldare/Expense-Tracker-Widget-Angular-",
@@ -43,10 +47,14 @@ export class ReposComponent {
   ]);
 
   public goToProjectWebsite(str) {
-    window.open(str);
+    if (this.isBrowser) {
+      window.open(str);
+    }
   }
 
   public goToRepoLink(str) {
-    window.open(str);
+    if (this.isBrowser) {
+      window.open(str);
+    }
   }
 }

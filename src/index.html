@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,11 +22,14 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-162850535-1"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+      if (typeof window !== "undefined") {
+        // Check if we are in a browser
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
       }
-      gtag("js", new Date());
     </script>
   </head>
 

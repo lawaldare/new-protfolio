@@ -17,8 +17,6 @@ export interface ContactIcon {
   icon: string;
 }
 
-declare const window: any;
-
 @Component({
   selector: "app-about",
   templateUrl: "./about.component.html",
@@ -35,7 +33,7 @@ export class AboutComponent implements OnInit {
   private readonly projectService = inject(ProjectService);
 
   public toggleState = computed(() =>
-    this.showRemainingContents() ? "Hide" : "Read"
+    this.showRemainingContents() ? "Hide" : "Read",
   );
 
   ngOnInit() {
