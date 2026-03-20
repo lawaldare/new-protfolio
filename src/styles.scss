@@ -1,6 +1,6 @@
 //import font
-@import "./assets/css/fonts.scss";
-@import "./assets/css/atlassian-fonts.scss";
+@use "assets/css/fonts.scss";
+@use "assets/css/atlassian-fonts.scss";
 
 :root {
   --header-text-color: #292d34;
