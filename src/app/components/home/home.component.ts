@@ -1,5 +1,12 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
-import Typewriter from "t-writer.js";
+import { isPlatformBrowser } from "@angular/common";
+import {
+  Component,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+  Inject,
+  PLATFORM_ID,
+} from "@angular/core";
 
 @Component({
   selector: "app-home",
@@ -13,25 +20,33 @@ export class HomeComponent implements AfterViewInit {
   mainHeader: ElementRef<HTMLSpanElement>;
   @ViewChild("buttons", { static: true }) buttons: ElementRef<HTMLDivElement>;
 
-  ngAfterViewInit(): void {
-    const target = this.typewriterElement.nativeElement as HTMLElement;
-    const writer = new Typewriter(target, {
-      typeColor: "red",
-      loop: true,
-      typeSpeed: 100,
-      deleteSpeed: 150,
-      cursorClass: "tw-cursor",
-    });
+  private isBrowser: boolean;
+  constructor(@Inject(PLATFORM_ID) platformId: object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
-    writer
-      .changeTypeColor("#49ccf9")
-      .type("a frontend engineer")
-      .rest(500)
-      .clear()
-      .changeTypeColor("#00b884")
-      .type("a wordpress developer")
-      .rest(500)
-      .clear()
-      .start();
+  async ngAfterViewInit(): Promise<void> {
+    if (this.isBrowser) {
+      const Typewriter = (await import("t-writer.js")).default;
+      const target = this.typewriterElement.nativeElement as HTMLElement;
+      const writer = new Typewriter(target, {
+        typeColor: "red",
+        loop: true,
+        typeSpeed: 100,
+        deleteSpeed: 150,
+        cursorClass: "tw-cursor",
+      });
+
+      writer
+        .changeTypeColor("#49ccf9")
+        .type("a frontend engineer")
+        .rest(500)
+        .clear()
+        .changeTypeColor("#00b884")
+        .type("a wordpress developer")
+        .rest(500)
+        .clear()
+        .start();
+    }
   }
 }

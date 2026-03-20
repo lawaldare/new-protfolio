@@ -10,33 +10,33 @@ export const routes: Routes = [
     path: "about",
     loadComponent: () =>
       import("./components/about/about.component").then(
-        (m) => m.AboutComponent
+        (m) => m.AboutComponent,
       ),
   },
   {
     path: "projects",
     loadComponent: () =>
       import("./components/portfolio/portfolio.component").then(
-        (m) => m.PortfolioComponent
+        (m) => m.PortfolioComponent,
       ),
   },
   {
     path: "repos",
     loadComponent: () =>
       import("./components/repos/repos.component").then(
-        (m) => m.ReposComponent
+        (m) => m.ReposComponent,
       ),
   },
   {
     path: "dailies",
     loadComponent: () =>
       import("./components/dailies/dailies.component").then(
-        (m) => m.DailiesComponent
+        (m) => m.DailiesComponent,
       ),
   },
-  {
-    path: "**",
-    loadComponent: () =>
-      import("./components/home/home.component").then((m) => m.HomeComponent),
-  },
+  // {
+  //   path: "**",
+  //   loadComponent: () =>
+  //     import("./components/home/home.component").then((m) => m.HomeComponent),
+  // },
 ];
