@@ -3,6 +3,7 @@ import { ProjectService } from "src/app/services/project.service";
 import { ContactIconComponent } from "../contact-icon/contact-icon.component";
 import { JobCardComponent } from "../job-card/job-card.component";
 import { papers } from "src/db/db";
+import { Title, Meta } from "@angular/platform-browser";
 
 export interface Job {
   title: string;
@@ -31,6 +32,8 @@ export class AboutComponent implements OnInit {
   public papers = signal<{ title: string; link: string }[]>(papers);
 
   private readonly projectService = inject(ProjectService);
+  private readonly titleService = inject(Title);
+  private readonly meta = inject(Meta);
 
   public toggleState = computed(() =>
     this.showRemainingContents() ? "Hide" : "Read",
@@ -39,6 +42,12 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
     this.jobs.update(() => this.projectService.getJobs());
     this.contactIcons.update(() => this.projectService.getContactIcons());
+    this.titleService.setTitle("About | Dare Lawal");
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Frontend Developer at EMBL-EBI building Angular scientific applications.",
+    });
   }
 
   toggleContent() {

@@ -1,5 +1,12 @@
-import { ChangeDetectionStrategy, Component, input } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  OnInit,
+  inject,
+} from "@angular/core";
 import { Repo } from "src/app/models/repo.model";
+import { Title, Meta } from "@angular/platform-browser";
 
 @Component({
   selector: "app-repo",
@@ -8,6 +15,18 @@ import { Repo } from "src/app/models/repo.model";
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RepoComponent {
+export class RepoComponent implements OnInit {
   public readonly repo = input.required<Repo>();
+
+  private readonly titleService = inject(Title);
+  private readonly meta = inject(Meta);
+
+  ngOnInit() {
+    this.titleService.setTitle("Repo | Dare Lawal");
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Frontend Developer at EMBL-EBI building Angular scientific applications.",
+    });
+  }
 }

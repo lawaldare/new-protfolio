@@ -1,18 +1,17 @@
 import { ProjectService } from "./../../services/project.service";
 import { Project } from "./../../project.model";
 import { Component, OnInit, signal } from "@angular/core";
-import { Title } from "@angular/platform-browser";
+import { Title, Meta } from "@angular/platform-browser";
 import { PortfolioCardComponent } from "../portfolio-card/portfolio-card.component";
 
-
 @Component({
-    selector: "app-portfolio",
-    templateUrl: "./portfolio.component.html",
-    styleUrls: [
-        "./portfolio.component.scss",
-        "../portfolio-card/portfolio-card.component.scss",
-    ],
-    imports: [PortfolioCardComponent]
+  selector: "app-portfolio",
+  templateUrl: "./portfolio.component.html",
+  styleUrls: [
+    "./portfolio.component.scss",
+    "../portfolio-card/portfolio-card.component.scss",
+  ],
+  imports: [PortfolioCardComponent],
 })
 export class PortfolioComponent implements OnInit {
   public projects = signal<Project[]>([]);
@@ -20,13 +19,18 @@ export class PortfolioComponent implements OnInit {
 
   constructor(
     private projectService: ProjectService,
-    private titleService: Title
+    private titleService: Title,
+    private meta: Meta,
   ) {}
 
   ngOnInit() {
     this.getProjects();
-
     this.titleService.setTitle("Portfolio | Dare Lawal");
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Explore Dare Lawal’s portfolio projects including Angular applications, scientific web tools, and frontend engineering work at EMBL-EBI.",
+    });
   }
 
   getProjects() {
@@ -36,25 +40,25 @@ export class PortfolioComponent implements OnInit {
 
   js(): void {
     this.projectFiltered.update(() =>
-      this.projects().filter((p) => p.stack === "javascript")
+      this.projects().filter((p) => p.stack === "javascript"),
     );
   }
 
   angular(): void {
     this.projectFiltered.update(() =>
-      this.projects().filter((p) => p.stack === "angular")
+      this.projects().filter((p) => p.stack === "angular"),
     );
   }
 
   wordpress(): void {
     this.projectFiltered.update(() =>
-      this.projects().filter((p) => p.stack === "wordpress")
+      this.projects().filter((p) => p.stack === "wordpress"),
     );
   }
 
   animation(): void {
     this.projectFiltered.update(() =>
-      this.projects().filter((p) => p.stack === "animation")
+      this.projects().filter((p) => p.stack === "animation"),
     );
   }
 }
