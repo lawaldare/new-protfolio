@@ -5,11 +5,11 @@ import { filter } from "rxjs";
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
 
-declare global {
-  interface Window {
-    gtag?: (...args: any[]) => void;
-  }
-}
+// declare global {
+//   interface Window {
+//     gtag?: (...args: any[]) => void;
+//   }
+// }
 
 @Component({
   selector: "app-root",
@@ -30,19 +30,19 @@ export class AppComponent implements OnInit {
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
 
-    if (this.isBrowser) {
-      const navEndEvents = this.router.events.pipe(
-        filter((event) => event instanceof NavigationEnd),
-      );
+    // if (this.isBrowser) {
+    //   const navEndEvents = this.router.events.pipe(
+    //     filter((event) => event instanceof NavigationEnd),
+    //   );
 
-      navEndEvents.subscribe((event: NavigationEnd) => {
-        if (window.gtag) {
-          window.gtag("config", "UA-162850535-1", {
-            page_path: event.urlAfterRedirects,
-          });
-        }
-      });
-    }
+    //   navEndEvents.subscribe((event: NavigationEnd) => {
+    //     if (window.gtag) {
+    //       window.gtag("config", "UA-162850535-1", {
+    //         page_path: event.urlAfterRedirects,
+    //       });
+    //     }
+    //   });
+    // }
   }
 
   async ngOnInit(): Promise<void> {
