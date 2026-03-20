@@ -16,6 +16,9 @@ declare global {
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
   imports: [NavbarComponent, RouterOutlet],
+  host: {
+    ngSkipHydration: "true",
+  },
 })
 export class AppComponent implements OnInit {
   title = "portfolio";
