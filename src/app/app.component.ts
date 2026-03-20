@@ -47,8 +47,10 @@ export class AppComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (this.isBrowser) {
-      const AOS = await import("aos");
-      AOS.init();
+      const AOS = (await import("aos")).default;
+      if (AOS) {
+        AOS.init();
+      }
     }
   }
 }
