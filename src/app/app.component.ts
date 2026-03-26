@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit, PLATFORM_ID } from "@angular/core";
 import { isPlatformBrowser } from "@angular/common";
-import { Router, NavigationEnd, RouterOutlet } from "@angular/router";
-import { filter } from "rxjs";
+import { Router, RouterOutlet } from "@angular/router";
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
 
