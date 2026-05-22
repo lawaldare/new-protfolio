@@ -12,13 +12,12 @@ import {
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.scss"],
-  standalone: true,
 })
 export class HomeComponent implements AfterViewInit {
-  @ViewChild("tw") typewriterElement;
+  @ViewChild("tw") typewriterElement!: { nativeElement: HTMLElement };
   @ViewChild("mainHeader", { static: true })
-  mainHeader: ElementRef<HTMLSpanElement>;
-  @ViewChild("buttons", { static: true }) buttons: ElementRef<HTMLDivElement>;
+  mainHeader!: ElementRef<HTMLSpanElement>;
+  @ViewChild("buttons", { static: true }) buttons!: ElementRef<HTMLDivElement>;
 
   private isBrowser: boolean;
   constructor(@Inject(PLATFORM_ID) platformId: object) {
