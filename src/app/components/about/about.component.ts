@@ -18,6 +18,8 @@ export interface Job {
   location: string;
   date: string;
   themeColor: string;
+  dateStart: string;
+  dateEnd: string;
 }
 
 export interface ContactIcon {
@@ -31,7 +33,6 @@ export interface ContactIcon {
   styleUrls: ["./about.component.scss"],
   imports: [JobCardComponent, ContactIconComponent],
   changeDetection: ChangeDetectionStrategy.Eager,
-  standalone: true,
 })
 export class AboutComponent implements OnInit {
   public jobs = signal<Job[]>([]);
@@ -58,7 +59,7 @@ export class AboutComponent implements OnInit {
     });
   }
 
-  toggleContent() {
+  public toggleContent(): void {
     this.showRemainingContents.update((value) => !value);
   }
 }

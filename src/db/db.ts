@@ -247,6 +247,8 @@ export const jobs = [
     companyName: "European Bioinformatics Institute | EMBL-EBI",
     location: "Cambridge, United Kingdom",
     date: "June, 2024 - Present",
+    dateStart: "2024-06-01",
+    dateEnd: "",
     themeColor: "#7b68ee",
   },
   {
@@ -254,6 +256,8 @@ export const jobs = [
     companyName: "Mida Technologies",
     location: "Delaware, United States",
     date: "June, 2025 - September, 2025",
+    dateStart: "2025-06-01",
+    dateEnd: "2025-09-30",
     themeColor: "#49ccf9",
   },
   {
@@ -261,6 +265,8 @@ export const jobs = [
     companyName: "EPG Financial Services Ltd",
     location: "Sliema, Malta",
     date: "April, 2024 - June, 2024",
+    dateStart: "2024-04-01",
+    dateEnd: "2024-06-30",
     themeColor: "#fd71af",
   },
   {
@@ -268,6 +274,8 @@ export const jobs = [
     companyName: "Betsson Group",
     location: "Ta`Xbiex, Malta",
     date: "July, 2023 - April, 2024",
+    dateStart: "2023-07-01",
+    dateEnd: "2024-04-30",
     themeColor: "#00b884",
   },
   {
@@ -275,6 +283,8 @@ export const jobs = [
     companyName: "Origin Markets",
     location: "London, United Kingdom",
     date: "March, 2022 - June, 2023",
+    dateStart: "2022-03-01",
+    dateEnd: "2023-06-30",
     themeColor: "#7b68ee",
   },
   {
@@ -282,6 +292,8 @@ export const jobs = [
     companyName: "Code & Care",
     location: "Kharkiv, Ukraine",
     date: "September, 2021 - March, 2022",
+    dateStart: "2021-09-01",
+    dateEnd: "2022-03-31",
     themeColor: "#fd7171",
   },
   {
@@ -289,6 +301,8 @@ export const jobs = [
     companyName: "Renmoney MFB",
     location: "Lagos, Nigeria",
     date: "March, 2020 - March, 2022",
+    dateStart: "2020-03-01",
+    dateEnd: "2022-03-31",
     themeColor: "#49ccf9",
   },
   {
@@ -296,6 +310,8 @@ export const jobs = [
     companyName: "Tr1pp",
     location: "London, United Kingdom",
     date: "July, 2021 - November, 2021",
+    dateStart: "2021-07-01",
+    dateEnd: "2021-11-30",
     themeColor: "#fd71af",
   },
   {
@@ -303,6 +319,8 @@ export const jobs = [
     companyName: "NXT Factor",
     location: "New York, USA",
     date: "October, 2019 - June, 2021",
+    dateStart: "2019-10-01",
+    dateEnd: "2021-06-30",
     themeColor: "#ffc800",
   },
   {
@@ -310,6 +328,8 @@ export const jobs = [
     companyName: "Terragon Group",
     location: "Lagos, Nigeria",
     date: "June, 2019 - February, 2020",
+    dateStart: "2019-07-01",
+    dateEnd: "2020-02-28",
     themeColor: "#fd7171",
   },
   {
@@ -317,6 +337,8 @@ export const jobs = [
     companyName: "Phoebestar Royalty Schools",
     location: "Osogbo, Nigeria",
     date: "October 2014 - July 2018",
+    dateStart: "2014-10-01",
+    dateEnd: "2018-07-31",
     themeColor: "#49ccf9",
   },
 ];
