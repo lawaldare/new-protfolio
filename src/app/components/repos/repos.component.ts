@@ -5,6 +5,7 @@ import {
   OnInit,
   PLATFORM_ID,
   signal,
+  ChangeDetectionStrategy
 } from "@angular/core";
 import { Repo } from "../../models/repo.model";
 import { RepoComponent } from "../repo/repo.component";
@@ -15,6 +16,7 @@ import { Title, Meta } from "@angular/platform-browser";
   selector: "app-repos",
   templateUrl: "./repos.component.html",
   styleUrls: ["./repos.component.scss"],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [RepoComponent],
 })
 export class ReposComponent implements OnInit {
@@ -66,13 +68,13 @@ export class ReposComponent implements OnInit {
     });
   }
 
-  public goToProjectWebsite(str) {
+  public goToProjectWebsite(str: string) {
     if (this.isBrowser) {
       window.open(str);
     }
   }
 
-  public goToRepoLink(str) {
+  public goToRepoLink(str: string) {
     if (this.isBrowser) {
       window.open(str);
     }

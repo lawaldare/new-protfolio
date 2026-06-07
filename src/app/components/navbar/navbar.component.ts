@@ -1,5 +1,5 @@
 
-import { Component } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { RouterLinkActive, RouterLink, RouterModule } from "@angular/router";
 
@@ -8,6 +8,7 @@ import { RouterLinkActive, RouterLink, RouterModule } from "@angular/router";
   templateUrl: "./navbar.component.html",
   styleUrls: ["./navbar.component.scss"],
   imports: [RouterLinkActive, RouterLink, RouterModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true,
 })
 export class NavbarComponent {

@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit, signal } from "@angular/core";
+import { Component, computed, inject, OnInit, signal, ChangeDetectionStrategy } from "@angular/core";
 import { ProjectService } from "src/app/services/project.service";
 import { ContactIconComponent } from "../contact-icon/contact-icon.component";
 import { JobCardComponent } from "../job-card/job-card.component";
@@ -23,6 +23,7 @@ export interface ContactIcon {
   templateUrl: "./about.component.html",
   styleUrls: ["./about.component.scss"],
   imports: [JobCardComponent, ContactIconComponent],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: true,
 })
 export class AboutComponent implements OnInit {

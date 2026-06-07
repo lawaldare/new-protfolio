@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit, PLATFORM_ID } from "@angular/core";
+import { Component, Inject, OnInit, PLATFORM_ID, ChangeDetectionStrategy } from "@angular/core";
 import { isPlatformBrowser } from "@angular/common";
 import { Router, RouterOutlet } from "@angular/router";
 
@@ -15,6 +15,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"],
   imports: [NavbarComponent, RouterOutlet],
+  changeDetection: ChangeDetectionStrategy.Eager,
   host: {
     ngSkipHydration: "true",
   },

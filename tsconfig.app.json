@@ -13,5 +13,11 @@
     "src/server.ts"
   ],
   "include": ["src/**/*.d.ts"],
-  "exclude": ["src/test.ts", "src/**/*.spec.ts"]
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "strictTemplates": false
+  }
 }

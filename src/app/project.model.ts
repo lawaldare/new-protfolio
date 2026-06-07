@@ -1,8 +1,8 @@
 export class Project {
-  name: string;
-  imageURL: string;
-  stack: string;
-  viewLink: string;
-  repoLink: string;
-  desc: string;
+  name!: string;
+  imageURL!: string;
+  stack!: string;
+  viewLink!: string;
+  repoLink!: string;
+  desc!: string;
 }

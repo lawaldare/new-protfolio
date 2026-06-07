@@ -1,6 +1,6 @@
 import { ProjectService } from "./../../services/project.service";
 import { Project } from "./../../project.model";
-import { Component, OnInit, signal } from "@angular/core";
+import { Component, OnInit, signal, ChangeDetectionStrategy } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { PortfolioCardComponent } from "../portfolio-card/portfolio-card.component";
 
@@ -11,6 +11,7 @@ import { PortfolioCardComponent } from "../portfolio-card/portfolio-card.compone
     "./portfolio.component.scss",
     "../portfolio-card/portfolio-card.component.scss",
   ],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [PortfolioCardComponent],
 })
 export class PortfolioComponent implements OnInit {
