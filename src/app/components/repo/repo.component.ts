@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from "@angular/core";
-import { Repo } from "src/app/models/repo.model";
+import { Repo } from "../../models/repo.model";
 
 @Component({
   selector: "app-repo",

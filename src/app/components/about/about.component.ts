@@ -1,9 +1,16 @@
-import { Component, computed, inject, OnInit, signal, ChangeDetectionStrategy } from "@angular/core";
-import { ProjectService } from "src/app/services/project.service";
+import {
+  Component,
+  computed,
+  inject,
+  OnInit,
+  signal,
+  ChangeDetectionStrategy,
+} from "@angular/core";
 import { ContactIconComponent } from "../contact-icon/contact-icon.component";
 import { JobCardComponent } from "../job-card/job-card.component";
-import { papers } from "src/db/db";
 import { Title, Meta } from "@angular/platform-browser";
+import { papers } from "../../../db/db";
+import { ProjectService } from "../../services/project.service";
 
 export interface Job {
   title: string;
