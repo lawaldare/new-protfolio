@@ -1,7 +1,15 @@
-import { Component, Inject, PLATFORM_ID, signal } from "@angular/core";
+import {
+  Component,
+  inject,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+  signal,
+} from "@angular/core";
 import { Repo } from "../../models/repo.model";
 import { RepoComponent } from "../repo/repo.component";
 import { isPlatformBrowser } from "@angular/common";
+import { Title, Meta } from "@angular/platform-browser";
 
 @Component({
   selector: "app-repos",
@@ -9,7 +17,7 @@ import { isPlatformBrowser } from "@angular/common";
   styleUrls: ["./repos.component.scss"],
   imports: [RepoComponent],
 })
-export class ReposComponent {
+export class ReposComponent implements OnInit {
   private isBrowser: boolean;
   constructor(@Inject(PLATFORM_ID) platformId: object) {
     this.isBrowser = isPlatformBrowser(platformId);
@@ -45,6 +53,18 @@ export class ReposComponent {
       repo: "https://github.com/lawaldare/rickandmorty-graphql",
     },
   ]);
+
+  private readonly titleService = inject(Title);
+  private readonly meta = inject(Meta);
+
+  ngOnInit() {
+    this.titleService.setTitle("Repos | Dare Lawal");
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Frontend Developer at EMBL-EBI building Angular scientific applications.",
+    });
+  }
 
   public goToProjectWebsite(str) {
     if (this.isBrowser) {
