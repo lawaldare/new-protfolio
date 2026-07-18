@@ -53,6 +53,7 @@ $color-white: #fff;
   &__desc {
     padding: 10px 20px;
     color: var(--main-text-color);
+    font-weight: 300;
   }
 
   &__links {
@@ -69,7 +70,7 @@ $color-white: #fff;
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--main-text-color);
     letter-spacing: 0.2rem;
   }

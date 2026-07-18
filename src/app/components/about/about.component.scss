@@ -5,7 +5,7 @@
 }
 
 .header {
-  font-weight: 600;
+  font-weight: 400;
 
   span {
     rotate: (345deg);
@@ -57,6 +57,8 @@
   }
 
   .text {
+    font-weight: 300;
+
     span {
       color: #7b68ee;
       cursor: pointer;
@@ -192,4 +194,8 @@
   .fa-3x {
     font-size: 2em !important;
   }
+}
+
+li a {
+  font-weight: 300;
 }
